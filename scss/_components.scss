@@ -5,7 +5,8 @@
   .login__layout {
 
     .login__links {
-      border-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
 
       p, label, .login__radio__forgot a {
         color: $donkerder_blauw;
@@ -13,12 +14,16 @@
         font-size: $font_tekst;
       }
 
+      label {
+        font-size: $font_klein;
+      }
+
       .login__radio__forgot a, .login__radio__forgot label, .login__signin__more p {
         font-size: $font_klein;
       }
 
       h1 {
-        @include titelLicht;
+        @include titelKleur($donkerder_blauw);
       }
 
       .login__signin__more i {
@@ -32,15 +37,16 @@
     }
 
     .signin__rechts {
-      border-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
 
       h1 {
-        @include titelDonker;
+        @include titelKleur($licht_blauw);
       }
 
       p {
         color: $licht_blauw;
-        font-size: $font_tekst;
+        font-size: $font_klein;
         font-family: $font_Oswald;
       }
 
@@ -48,6 +54,9 @@
         @include buttonOpmaakDonker;
       }
     }
-
   }
 }
+
+
+
+

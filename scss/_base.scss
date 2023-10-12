@@ -51,15 +51,8 @@ $font_kleinste: 10px;
   font-weight: 500;
 }
 
-@mixin titelLicht {
-  color: $donkerder_blauw;
-  font-family: $font_Rubik;
-  font-weight: 600;
-  font-size: $font_titel;
-}
-
-@mixin titelDonker {
-  color: $licht_blauw;
+@mixin titelKleur($kleur_titel) {
+  color: $kleur_titel;
   font-family: $font_Rubik;
   font-weight: 600;
   font-size: $font_titel;
