@@ -1,1 +1,53 @@
 @use 'base' as *;
+
+
+.login__background {
+  .login__layout {
+
+    .login__links {
+      border-radius: 20px;
+
+      p, label, .login__radio__forgot a {
+        color: $donkerder_blauw;
+        font-family: $font_Oswald;
+        font-size: $font_tekst;
+      }
+
+      .login__radio__forgot a, .login__radio__forgot label, .login__signin__more p {
+        font-size: $font_klein;
+      }
+
+      h1 {
+        @include titelLicht;
+      }
+
+      .login__signin__more i {
+        font-size: $font_titel;
+        color: $wit;
+      }
+
+      button {
+         @include buttonOpmaaklicht;
+       }
+    }
+
+    .signin__rechts {
+      border-radius: 20px;
+
+      h1 {
+        @include titelDonker;
+      }
+
+      p {
+        color: $licht_blauw;
+        font-size: $font_tekst;
+        font-family: $font_Oswald;
+      }
+
+      button {
+        @include buttonOpmaakDonker;
+      }
+    }
+
+  }
+}

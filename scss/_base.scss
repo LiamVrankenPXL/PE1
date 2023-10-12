@@ -1,0 +1,66 @@
+$wit: #ffffff;
+$licht_blauw: #aec0b4;
+$blauw: #5f8688;
+$donkerder_blauw: #061a1f;
+$donker_blauw: #0a333e;
+
+$font_Oswald: 'Oswald', sans-serif;
+$font_Rubik: 'Rubik', sans-serif;
+
+$font_titel: 30px;
+$font_subtitel: 20px;
+$font_tekst: 18px;
+$font_klein: 15px;
+$font_kleinste: 10px;
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+@mixin flexLayout() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@mixin kaderInput($margin_bottom) {
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: $margin_bottom;
+  width: 100%;
+}
+
+
+@mixin buttonOpmaaklicht() {
+  background-color: $donker_blauw;
+  border-radius: 10px;
+  color: $licht_blauw;
+  font-size: $font_tekst;
+  font-weight: 500;
+}
+
+@mixin buttonOpmaakDonker() {
+  background-color: $licht_blauw;
+  border-radius: 10px;
+  color: $donker_blauw;
+  font-size: $font_tekst;
+  font-weight: 500;
+}
+
+@mixin titelLicht {
+  color: $donkerder_blauw;
+  font-family: $font_Rubik;
+  font-weight: 600;
+  font-size: $font_titel;
+}
+
+@mixin titelDonker {
+  color: $licht_blauw;
+  font-family: $font_Rubik;
+  font-weight: 600;
+  font-size: $font_titel;
+}

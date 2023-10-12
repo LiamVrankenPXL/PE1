@@ -1,1 +1,94 @@
 @use 'base' as *;
+
+.login__background {
+  @include flexLayout;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: $licht_blauw;
+
+  .login__layout {
+    @include flexLayout;
+    flex-direction: row;
+    align-items: stretch;
+
+    .login__links {
+      flex: 2;
+      flex-direction: column;
+      padding: 35px;
+      background-color: $blauw;
+
+      h1 {
+        padding-bottom: 30px;
+        text-align: center;
+      }
+
+      .login__gegevens {
+        .login__adres__kader {
+          @include kaderInput(10px);
+        }
+
+        .login__wachtwoord__kader {
+          @include kaderInput(2px);
+        }
+
+        .login__radio__forgot {
+          a {
+            padding-left: 15px;
+          }
+        }
+
+        .login__sumbit {
+          margin-top: 7px;
+          margin-bottom: 15px;
+          text-align: center;
+
+          button {
+            width: 60%;
+            padding: 12px;
+            margin: 15px;
+            border: none;
+            cursor: pointer;
+          }
+        }
+
+        .login__signin__more {
+          i {
+            padding-top: 5px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .signin__rechts {
+      flex: 1.5;
+      flex-direction: column;
+      padding: 35px;
+      background-image: url("../assets/images/abstract_background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      h1 {
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      .signin__sumbit {
+        margin-top: 7px;
+        margin-bottom: 15px;
+        text-align: center;
+
+        button {
+          width: 60%;
+          padding: 12px;
+          margin: 15px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+

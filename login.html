@@ -3,18 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labo SCSS</title>
+    <title>Log in</title>
 
     <!-- Link naar main.css  bestand -->
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Link voor icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/6a30581523.js" crossorigin="anonymous"></script>
     <!-- Link voor Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700" rel="stylesheet">
 </head>
 <body>
+<div class="login__background">
+    <div class="login__layout">
+        <div class="login__links">
+            <h1>Log in bij stores</h1>
+
+            <!--labels -->
+            <form class="login__gegevens" action="mailto:info@exameples.com?subject=Antwoord op contactformulier" method="post" enctype="text/plain">
+                <!--email met placeholder-->
+                <label class="login__adres__tekst" for="mailadres">Email adres</label>
+                <input class="login__adres__kader" type="email" id="mailadres" name="mailadres" required minlength="2" maxlength="100" placeholder="Example.info@gmail.com"><br><br>
+
+                <!--wachtwoord-->
+                <label class="login__wachtwoord__tekst" for="wachtwoord">Wachtwoord</label>
+                <input class="login__wachtwoord__kader" type="password" id="wachtwoord" name="Wachtwoord" required placeholder="Wachtwoord"><br><br>
+
+                <div class="login__radio__forgot">
+                    <input type="radio" name="radiobuttons" id="radio1" value="radio1">
+                    <label for="radio1">Aangemeld blijven?</label>
+                    <a href="#">Wachtwoord vergeten?</a>
+                </div>
+
+                <!--verzenden-->
+                <div class="login__sumbit">
+                    <button type="submit">Log in</button>
+                </div>
+
+
+                <div class="login__signin__more">
+                    <p>Of aanmelden met:</p>
+                    <a><i class="fa-brands fa-google"></i></a>
+                    <a><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="signin__rechts">
+            <h1>Hallo daar!</h1>
+            <p>Heb je nog geen account? Maak er dan nu één</p>
+
+            <div class="signin__sumbit">
+                <button type="submit">Registreer</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

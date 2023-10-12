@@ -1,3 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.login__background .login__layout .login__links {
+  border-radius: 20px;
+}
+.login__background .login__layout .login__links p, .login__background .login__layout .login__links label, .login__background .login__layout .login__links .login__radio__forgot a {
+  color: #061a1f;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+.login__background .login__layout .login__links .login__radio__forgot a, .login__background .login__layout .login__links .login__radio__forgot label, .login__background .login__layout .login__links .login__signin__more p {
+  font-size: 15px;
+}
+.login__background .login__layout .login__links h1 {
+  color: #061a1f;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.login__background .login__layout .login__links .login__signin__more i {
+  font-size: 30px;
+  color: #ffffff;
+}
+.login__background .login__layout .login__links button {
+  background-color: #0a333e;
+  border-radius: 10px;
+  color: #aec0b4;
+  font-size: 18px;
+  font-weight: 500;
+}
+.login__background .login__layout .signin__rechts {
+  border-radius: 20px;
+}
+.login__background .login__layout .signin__rechts h1 {
+  color: #aec0b4;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.login__background .login__layout .signin__rechts p {
+  color: #aec0b4;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+}
+.login__background .login__layout .signin__rechts button {
+  background-color: #aec0b4;
+  border-radius: 10px;
+  color: #0a333e;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.login__background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #aec0b4;
+}
+.login__background .login__layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
+}
+.login__background .login__layout .login__links {
+  flex: 2;
+  flex-direction: column;
+  padding: 35px;
+  background-color: #5f8688;
+}
+.login__background .login__layout .login__links h1 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.login__background .login__layout .login__links .login__gegevens .login__adres__kader {
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.login__background .login__layout .login__links .login__gegevens .login__wachtwoord__kader {
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 2px;
+  width: 100%;
+}
+.login__background .login__layout .login__links .login__gegevens .login__radio__forgot a {
+  padding-left: 15px;
+}
+.login__background .login__layout .login__links .login__gegevens .login__sumbit {
+  margin-top: 7px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.login__background .login__layout .login__links .login__gegevens .login__sumbit button {
+  width: 60%;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+}
+.login__background .login__layout .login__links .login__gegevens .login__signin__more i {
+  padding-top: 5px;
+  margin-right: 10px;
+}
+.login__background .login__layout .signin__rechts {
+  flex: 1.5;
+  flex-direction: column;
+  padding: 35px;
+  background-image: url("../assets/images/abstract_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.login__background .login__layout .signin__rechts h1 {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.login__background .login__layout .signin__rechts .signin__sumbit {
+  margin-top: 7px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.login__background .login__layout .signin__rechts .signin__sumbit button {
+  width: 60%;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=main.css.map */
