@@ -1,6 +1,6 @@
 @use 'base' as *;
 
-.login__background {
+.login {
   @include flexLayout;
   flex-direction: column;
   height: 100vh;
@@ -92,7 +92,31 @@
   }
 }
 
+.product {
+  &__layout {
+    @include textAlign(center)
+  }
 
+  &__intro {
+    @include flexLayout;
+    flex-direction: row;
+
+    &__links {
+      flex-direction: column;
+      margin: 20px;
+
+    }
+
+    &__rechts {
+      flex-direction: column;
+      margin: 20px;
+
+
+
+
+    }
+  }
+}
 
 
 
