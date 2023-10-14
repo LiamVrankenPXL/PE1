@@ -229,25 +229,35 @@ body {
 
       &__info {
         .aanwezigheid {
-          
+          color: $succes;
+          font-size: $font_klein;
+        }
+
+        h2 {
+          font-size: $font_titel;
         }
       }
 
       &__options {
         a {
           text-decoration: none;
-          
+          color: $zwart;
         }
+
+        a:first-child {
+          font-weight: 600;
+        }
+
+        a:hover,
+        a:first-child:active {
+          font-weight: 600;
+        }
+
       }
 
       &__buttons {
         button {
-          background-color: $donker_blauw;
-          color: $wit;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-          transition: background-color 0.3s;
+          @include buttonOpmaak();
 
           &:hover {
             background-color: $donkerder_blauw;

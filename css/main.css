@@ -155,8 +155,23 @@ body {
 .detail__layout__tekst__stars i, .detail__layout__tekst__stars p {
   color: #061a1f;
 }
+.detail__layout__tekst__info .aanwezigheid {
+  color: darkgreen;
+  font-size: 16px;
+}
+.detail__layout__tekst__info h2 {
+  font-size: 30px;
+}
 .detail__layout__tekst__options a {
   text-decoration: none;
+  color: #000000;
+}
+.detail__layout__tekst__options a:first-child {
+  font-weight: 600;
+}
+.detail__layout__tekst__options a:hover,
+.detail__layout__tekst__options a:first-child:active {
+  font-weight: 600;
 }
 .detail__layout__tekst__buttons button {
   background-color: #0a333e;
