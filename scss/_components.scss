@@ -17,6 +17,11 @@ label, p, a {
   color: $zwart;
 }
 
+li, a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 body {
   background-color: $donker_thema;
 }
@@ -290,5 +295,40 @@ body {
         }
       }
     }
+  }
+}
+
+
+
+.footer {
+  @include flexLayout;
+  background-color: $blauw;
+
+  &__addr {
+    address {
+      button {
+        @include buttonOpmaak($licht_blauw);
+
+        &:hover {
+          background-color: $donker_blauw;
+        }
+      }
+    }
+  }
+
+  &__nav {
+      &-ul {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: $donker_blauw;
+        }
+      }
+    }
+
+  &__legal {
+    border-top: 1px solid $donker_blauw;
+    padding: 10px;
+    color: $grijs;
   }
 }
