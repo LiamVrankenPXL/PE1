@@ -130,6 +130,31 @@ body {
   background-color: #5f8688;
   border-radius: 10px;
 }
+.detail__layout {
+  background-color: #aec0b4;
+  border-radius: 10px;
+}
+
+/*________product detail gegevens________*/
+.detail__layout__foto {
+  background-color: #5f8688;
+  border-radius: 20px;
+}
+.detail__layout__tekst__options a {
+  text-decoration: none;
+}
+.detail__layout__tekst__buttons button {
+  background-color: #0a333e;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.detail__layout__tekst__buttons button:hover {
+  background-color: #061a1f;
+}
+
 /*________login gegevens________*/
 .login {
   display: flex;
@@ -291,7 +316,7 @@ body {
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(0deg);
+  transform: rotate(-7deg);
 }
 .index__card__rotate__special:nth-child(2) {
   width: 350px;
@@ -299,7 +324,7 @@ body {
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(-5deg);
+  transform: rotate(0deg);
 }
 .index__card__rotate__special:nth-child(3) {
   width: 350px;
@@ -307,7 +332,7 @@ body {
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(0deg);
+  transform: rotate(-3deg);
 }
 
 .index__contact {
@@ -327,6 +352,80 @@ body {
 }
 .index__contact__rechts button {
   width: 40%;
+  padding: 12px;
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+/*________product detail gegevens________*/
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.detail__layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 80%;
+  height: 70%;
+  margin: 20px;
+  padding: 20px;
+}
+.detail__layout__aanzichten {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 10%;
+}
+.detail__layout__aanzichten img {
+  margin-top: 20px;
+  width: 60%;
+  height: auto;
+}
+.detail__layout__foto {
+  width: 35%; /* 40% van de breedte van .detail__layout */
+  padding: 10px;
+  margin: 0 15px 0 0;
+}
+.detail__layout__foto img {
+  width: 90%;
+  height: auto;
+}
+.detail__layout__tekst {
+  width: 50%; /* 45% van de breedte van .detail__layout */
+  align-self: self-start;
+  margin-top: 70px;
+  flex: 1;
+}
+.detail__layout__tekst__stars {
+  display: flex;
+  flex-direction: row;
+}
+.detail__layout__tekst__stars p {
+  margin-left: 10px;
+}
+.detail__layout__tekst__info h2 {
+  margin-top: 50px;
+}
+.detail__layout__tekst__info p {
+  margin-top: 5px;
+}
+.detail__layout__tekst__options {
+  margin: 20px 0 10px 0;
+}
+.detail__layout__tekst__options a {
+  margin: 0 20px 0 0;
+  padding: 0 10px 0 0;
+  border-right: 1px solid black;
+}
+.detail__layout__tekst__buttons button {
+  width: 15%;
   padding: 12px;
   margin-top: 40px;
   border: none;
