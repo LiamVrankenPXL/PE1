@@ -127,7 +127,7 @@ body {
 }
 
 .index__card__rotate__special {
-  background-color: #aec0b4;
+  background-color: #5f8688;
   border-radius: 10px;
 }
 /*________login gegevens________*/
@@ -291,7 +291,7 @@ body {
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(-6deg);
+  transform: rotate(0deg);
 }
 .index__card__rotate__special:nth-child(2) {
   width: 350px;
@@ -299,7 +299,7 @@ body {
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(0deg);
+  transform: rotate(-5deg);
 }
 .index__card__rotate__special:nth-child(3) {
   width: 350px;
@@ -307,7 +307,30 @@ body {
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(-6deg);
+  transform: rotate(0deg);
+}
+
+.index__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20px;
+  padding: 20px;
+}
+.index__contact__links img {
+  width: 40%;
+  height: auto;
+}
+.index__contact__rechts {
+  flex: 1;
+}
+.index__contact__rechts button {
+  width: 40%;
+  padding: 12px;
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

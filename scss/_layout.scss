@@ -191,9 +191,34 @@
 }
 
 
-
 .index__contact {
-  
+  @include flexLayout;
+  flex-direction: row;
+  margin: 20px;
+  padding: 20px;
+
+  &__links {
+
+
+    img {
+      width: 40%;
+      height: auto;
+    }
+  }
+
+  &__rechts {
+    flex: 1;
+
+    button {
+      width: 40%;
+      padding: 12px;
+      margin-top: 40px;
+      border: none;
+      cursor: pointer;
+    }
+  }
 }
+
+
 
 
