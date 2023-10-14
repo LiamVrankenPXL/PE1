@@ -29,10 +29,6 @@ $card_counter: 3;
   justify-content: center;
 }
 
-@mixin textAlign($align){
-  text-align: $align;
-}
-
 @mixin kaderInput($margin_bottom) {
   box-sizing: border-box;
   padding: 8px;
@@ -53,7 +49,7 @@ $card_counter: 3;
 }
 
 @mixin buttonLayoutGroot() {
-  width: 55%;
+  width: 60%;
   padding: 12px;
   margin: 15px;
   border: none;

@@ -1,5 +1,8 @@
 @use 'base' as *;
 
+/*________nav gegevens________*/
+
+
 
 /*________login gegevens________*/
 .login {
@@ -46,11 +49,7 @@
           text-align: center;
 
           button {
-            width: 60%;
-            padding: 12px;
-            margin: 15px;
-            border: none;
-            cursor: pointer;
+            @include buttonLayoutGroot;
           }
         }
 
@@ -83,11 +82,7 @@
         text-align: center;
 
         button {
-          width: 60%;
-          padding: 12px;
-          margin: 15px;
-          border: none;
-          cursor: pointer;
+          @include buttonLayoutGroot;
         }
       }
     }
