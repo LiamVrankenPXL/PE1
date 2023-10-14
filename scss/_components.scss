@@ -139,9 +139,8 @@ body {
   }
 }
 
-/*_____product cards_____*/
-/*________product cards gegevens________*/
 
+/*________product cards gegevens________*/
 .card {
   &__title {
     color: $licht_blauw;
@@ -170,9 +169,29 @@ body {
 }
 
 
+/*________pagination gegevens________*/
+.pagination {
+    a {
+      display: block;
+      text-decoration: none;
+      color: $donkerder_blauw;
+      background-color: $licht_blauw;
+      font-size: $font_klein;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
 
+      &.active {
+        background-color: $blauw;
+        color: $wit;
+      }
 
+      &:hover {
+        background-color: $blauw;
+      }
+    }
 
+}
 
 
 

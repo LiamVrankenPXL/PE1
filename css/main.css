@@ -120,7 +120,6 @@ body {
   background-color: #061a1f;
 }
 
-/*_____product cards_____*/
 /*________product cards gegevens________*/
 .card__title {
   color: #aec0b4;
@@ -144,6 +143,25 @@ body {
   color: #061a1f;
 }
 .card__details button:hover {
+  background-color: #5f8688;
+}
+
+/*________pagination gegevens________*/
+.pagination a {
+  display: block;
+  text-decoration: none;
+  color: #061a1f;
+  background-color: #aec0b4;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.pagination a.active {
+  background-color: #5f8688;
+  color: #ffffff;
+}
+.pagination a:hover {
   background-color: #5f8688;
 }
 
@@ -395,12 +413,13 @@ body {
   margin-bottom: 10px;
 }
 
+/*________search gegevens________*/
 .product__search {
   padding: 20px;
   text-align: center;
 }
 .product__search .product__layout {
-  max-width: 1200px;
+  max-width: 60%;
   margin: 0 auto;
 }
 .product__search__bar {
@@ -416,6 +435,25 @@ body {
 .product__search__bar button {
   padding: 10px 12px;
 }
+.product__search .product__filter {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}
+.product__search .product__filter .filter-option {
+  padding: 8px 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #5f8688;
+  border-radius: 4px;
+}
+.product__search .product__filter .filter-option:hover {
+  background-color: #0a333e;
+  color: #aec0b4;
+}
 
 /*________product cards gegevens________*/
 .card__layout {
@@ -425,14 +463,42 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .card__layout {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card__layout .card {
+    width: 48%; /* Twee kaarten naast elkaar */
+    margin: 0 0 30px 0; /* Voeg een margin-bottom toe */
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card__layout {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card__layout .card {
+    width: 30%;
+    margin: 0 0 20px 0; /* Voeg een margin-bottom toe */
+  }
+}
+@media (min-width: 1200px) {
+  .card__layout {
+    flex-wrap: wrap; /* Hier de flex-wrap toegevoegd */
+  }
+  .card__layout .card {
+    width: 23%;
+  }
+}
 
 .card {
   width: 20%;
   height: auto;
-  margin: 20px;
+  margin: 25px 0 20px 0;
 }
 .card__image {
-  width: 60%;
+  width: 50%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -457,6 +523,25 @@ body {
   border: none;
   cursor: pointer;
   margin: 0 auto;
+}
+
+/*________pagination gegevens________*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.pagination ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.pagination ul li {
+  margin: 0 5px;
+}
+.pagination ul a {
+  padding: 4px 8px;
 }
 
 /*________start pagina gegevens________*/

@@ -125,12 +125,13 @@
   }
 }
 
+/*________search gegevens________*/
 .product__search {
   padding: 20px;
   text-align: center;
 
   .product__layout {
-    max-width: 1200px;
+    max-width: 60%;
     margin: 0 auto;
   }
 
@@ -141,14 +142,36 @@
     input {
       padding: 10px;
       width: 70%;
-
     }
 
     button {
       padding: 10px 12px;
     }
   }
+
+  .product__filter {
+    margin-top: 20px;
+    @include flexLayout;
+    justify-content: center;
+
+    .filter-option {
+      padding: 8px 16px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      background-color: $blauw;
+      border-radius: 4px;
+
+
+      &:hover {
+        background-color: $donker_blauw;
+        color: $licht_blauw;
+      }
+    }
+  }
 }
+
+
 
 
 /*________product cards gegevens________*/
@@ -156,15 +179,43 @@
   @include flexLayout;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card {
+      width: 48%; /* Twee kaarten naast elkaar */
+      margin: 0 0 30px 0; /* Voeg een margin-bottom toe */
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card {
+      width: 30%;
+      margin: 0 0 20px 0; /* Voeg een margin-bottom toe */
+    }
+  }
+
+  @media (min-width: 1200px) {
+    flex-wrap: wrap; /* Hier de flex-wrap toegevoegd */
+
+    .card {
+      width: 23%;
+    }
+  }
 }
 
 .card {
   width: 20%;
   height: auto;
-  margin: 20px;
+  margin: 25px 0 20px 0;
 
   &__image {
-    width: 60%;
+    width: 50%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -194,9 +245,27 @@
 }
 
 
+/*________pagination gegevens________*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 
+    li {
+      margin: 0 5px;
+    }
 
+    a {
+      padding: 4px 8px;
+    }
+  }
+}
 
 
 
