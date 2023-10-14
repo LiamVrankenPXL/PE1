@@ -3,51 +3,78 @@
   padding: 0;
 }
 
-/*nog aanpassen te passen met argument(.....)*/
 /*_____fonds_____*/
 h1, h2, h3 {
   font-family: "Oswald", sans-serif;
-  font-weight: 500;
+  color: #061a1f;
+}
+
+h1 {
+  font-weight: 600;
 }
 
 label, p, a {
   font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: #000000;
 }
 
 body {
   background-color: #1A1A1A;
 }
 
+/*_____login_____*/
 .login__links {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-.login__links p, .login__links label, .login__links .login__radio__forgot a {
-  color: #061a1f;
-  font-family: "Oswald", sans-serif;
-  font-size: 18px;
+.login__links .login__gegevens__adres__tekst, .login__links .login__gegevens__wachtwoord__tekst {
+  font-size: 16px;
 }
-.login__links label {
-  font-size: 15px;
-}
-.login__links .login__radio__forgot a, .login__links .login__radio__forgot label, .login__links .login__signin__more p {
-  font-size: 15px;
+.login__links .login__gegevens .login__radio__forgot label, .login__links .login__gegevens .login__radio__forgot a {
+  font-size: 16px;
 }
 .login__links .login__signin__more i {
   font-size: 30px;
+}
+.login__links button {
+  background-color: #0a333e;
   color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.login__links button:hover {
+  background-color: #061a1f;
 }
 .login .signin__rechts {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+.login .signin__rechts h1 {
+  color: #aec0b4;
+}
 .login .signin__rechts p {
   color: #aec0b4;
-  font-size: 15px;
-  font-family: "Oswald", sans-serif;
+  font-size: 16px;
 }
+.login .signin__rechts button {
+  background-color: #aec0b4;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #000000;
+}
+.login .signin__rechts button:hover {
+  background-color: #5f8688;
+}
+
+/*_____product_____*/
 .product__header {
-  background-color: #f0f0f0;
+  background-color: #5f8688;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
@@ -56,8 +83,7 @@ body {
   border-radius: 4px 0 0 4px;
 }
 .product__header .product__search__bar button {
-  background-color: #5f8688;
-  color: #ffffff;
+  background-color: #0a333e;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
@@ -67,31 +93,8 @@ body {
   background-color: #061a1f;
 }
 
-.product__mid__card {
-  background-color: #5f8688;
-  border: none;
-  border-radius: 8px;
-}
-.product__mid__card img {
-  border-radius: 8px 8px 0 0;
-}
-.product__mid__card__details span {
-  font-weight: bold;
-}
-.product__mid__card__details button {
-  background-color: #0a333e;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.product__mid__card__details button:hover {
-  background-color: #061a1f;
-}
-
 .index__header__links h1 {
-  color: #ffffff;
+  color: #aec0b4;
   margin-bottom: 25px;
 }
 .index__header__links p {
@@ -109,19 +112,48 @@ body {
   background-color: #061a1f;
 }
 
+.index__card h1 {
+  color: #aec0b4;
+}
 .index__card__rotate__special {
   background-color: #5f8688;
   border-radius: 10px;
 }
-.detail__layout {
+.index__card__rotate__special h2 {
+  font-size: 30px;
+}
+
+.index__contact__rechts h1 {
+  color: #aec0b4;
+}
+.index__contact__rechts p {
+  color: #ffffff;
+}
+.index__contact__rechts button {
   background-color: #aec0b4;
-  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #000000;
+}
+.index__contact__rechts button:hover {
+  background-color: #5f8688;
 }
 
 /*________product detail gegevens________*/
+.detail__layout {
+  background-color: #aec0b4;
+  border-radius: 4px;
+}
 .detail__layout__foto {
   background-color: #5f8688;
   border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.detail__layout__tekst__stars i, .detail__layout__tekst__stars p {
+  color: #061a1f;
 }
 .detail__layout__tekst__options a {
   text-decoration: none;
@@ -165,17 +197,23 @@ body {
   padding-bottom: 30px;
   text-align: center;
 }
-.login .login__layout .login__links .login__gegevens .login__adres__kader {
+.login .login__layout .login__links .login__gegevens__adres__kader {
   box-sizing: border-box;
   padding: 8px;
+  margin-top: 5px;
   margin-bottom: 10px;
   width: 100%;
+  border-radius: 5px;
+  border: none;
 }
-.login .login__layout .login__links .login__gegevens .login__wachtwoord__kader {
+.login .login__layout .login__links .login__gegevens__wachtwoord__kader {
   box-sizing: border-box;
   padding: 8px;
+  margin-top: 5px;
   margin-bottom: 2px;
   width: 100%;
+  border-radius: 5px;
+  border: none;
 }
 .login .login__layout .login__links .login__gegevens .login__radio__forgot a {
   padding-left: 15px;
@@ -286,7 +324,10 @@ body {
 
 .index__card h1 {
   text-align: center;
-  margin: 0 10px 20px 10px;
+  margin: 0 10px 50px 10px;
+}
+.index__card h2 {
+  margin: 0 0 20px 0;
 }
 .index__card__rotate {
   display: flex;
@@ -295,28 +336,27 @@ body {
 }
 .index__card__rotate__special:nth-child(1) {
   width: 350px;
-  height: 300px;
+  height: 350px;
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(-7deg);
+  transform: rotate(2deg);
 }
 .index__card__rotate__special:nth-child(2) {
   width: 350px;
-  height: 300px;
+  height: 350px;
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(-2deg);
-
+  transform: rotate(5deg);
 }
 .index__card__rotate__special:nth-child(3) {
   width: 350px;
-  height: 300px;
+  height: 350px;
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(-3deg);
+  transform: rotate(-10deg);
 }
 
 .index__contact {
@@ -409,7 +449,7 @@ body {
   border-right: 1px solid black;
 }
 .detail__layout__tekst__buttons button {
-  width: 15%;
+  width: 10%;
   padding: 12px;
   margin-top: 40px;
   border: none;

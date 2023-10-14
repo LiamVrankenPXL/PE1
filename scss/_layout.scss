@@ -26,11 +26,11 @@
       }
 
       .login__gegevens {
-        .login__adres__kader {
+        &__adres__kader {
           @include kaderInput(10px);
         }
 
-        .login__wachtwoord__kader {
+        &__wachtwoord__kader {
           @include kaderInput(2px);
         }
 
@@ -171,7 +171,11 @@
 .index__card {
   h1 {
     text-align: center;
-    margin: 0 10px 20px 10px;
+    margin: 0 10px 50px 10px;
+  }
+
+  h2 {
+    margin: 0 0 20px 0;
   }
 
   &__rotate {
@@ -180,7 +184,7 @@
     @for $teller from 1 through $card_counter {
       &__special:nth-child(#{$teller}) {
         width: 350px;
-        height: 300px;
+        height: 350px;
         border: none;
         margin: 25px;
         padding: 25px;
@@ -302,7 +306,7 @@
 
       &__buttons {
         button {
-          width: 15%;
+          width: 10%;
           padding: 12px;
           margin-top: 40px;
           border: none;

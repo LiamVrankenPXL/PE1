@@ -3,76 +3,87 @@
 /*_____fonds_____*/
 h1, h2, h3 {
   font-family: $font_Oswald;
-  font-weight: 500;
+  color: $donkerder_blauw;
+
+}
+
+h1 {
+  font-weight: 600;
 }
 
 label, p, a {
   font-family: $font_Rubik;
+  font-size: $font_tekst;
+  color: $zwart;
 }
-
-
-
 
 body {
   background-color: $donker_thema;
 }
 
+
+/*_____login_____*/
 .login {
-    &__links {
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
+  &__links {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 
-      p, label, .login__radio__forgot a {
-        color: $donkerder_blauw;
-        font-family: $font_Oswald;
-        font-size: $font_tekst;
-      }
-
-      label {
+    .login__gegevens {
+      &__adres__tekst,
+      &__wachtwoord__tekst {
         font-size: $font_klein;
       }
 
-      .login__radio__forgot a, .login__radio__forgot label, .login__signin__more p {
+      .login__radio__forgot label, .login__radio__forgot a{
         font-size: $font_klein;
       }
+    }
 
-      h1 {
-
-      }
-
-      .login__signin__more i {
+    .login__signin__more {
+      i {
         font-size: $font_titel;
-        color: $wit;
-      }
-
-      button {
-
-       }
-    }
-
-    .signin__rechts {
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-
-      h1 {
-
-      }
-
-      p {
-        color: $licht_blauw;
-        font-size: $font_klein;
-        font-family: $font_Oswald;
-      }
-
-      button {
-
       }
     }
+
+    button {
+      @include buttonOpmaak();
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+
+  .signin__rechts {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    h1 {
+      color: $licht_blauw;
+    }
+
+    p {
+      color: $licht_blauw;
+      font-size: $font_klein;
+    }
+
+    button {
+      @include buttonOpmaak($licht_blauw);
+      color: $zwart;
+
+      &:hover {
+        background-color: $blauw;
+      }
+    }
+  }
 }
 
 
+
+
+/*_____product_____*/
 .product__header {
-  background-color: #f0f0f0;
+  background-color: $blauw;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 
@@ -84,8 +95,7 @@ body {
       }
 
       button {
-        background-color: $blauw;
-        color: $wit;
+        background-color: $donker_blauw;
         border: none;
         border-radius: 0 4px 4px 0;
         cursor: pointer;
@@ -100,42 +110,42 @@ body {
 }
 
 
-.product__mid {
-  &__card {
-    background-color: $blauw;
-    border: none;
-    border-radius: 8px;
-
-    img {
-      border-radius: 8px 8px 0 0;
-    }
-
-    &__details {
-      span {
-        font-weight: bold;
-      }
-
-      button {
-        background-color: $donker_blauw;
-        color: $wit;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-
-        &:hover {
-          background-color: $donkerder_blauw;
-        }
-      }
-    }
-  }
-}
+//.product__mid {
+//  &__card {
+//    background-color: $blauw;
+//    border: none;
+//    border-radius: 8px;
+//
+//    img {
+//      border-radius: 8px 8px 0 0;
+//    }
+//
+//    &__details {
+//      span {
+//        font-weight: bold;
+//      }
+//
+//      button {
+//        background-color: $donker_blauw;
+//        color: $wit;
+//        border: none;
+//        border-radius: 4px;
+//        cursor: pointer;
+//        transition: background-color 0.3s;
+//
+//        &:hover {
+//          background-color: $donkerder_blauw;
+//        }
+//      }
+//    }
+//  }
+//}
 
 
 .index__header {
   &__links {
     h1 {
-      color: $wit;
+      color: $licht_blauw;
       margin-bottom: 25px;
     }
 
@@ -144,12 +154,7 @@ body {
     }
 
     button {
-      background-color: $donker_blauw;
-      color: $wit;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s;
+      @include buttonOpmaak();
 
       &:hover {
         background-color: $donkerder_blauw;
@@ -158,9 +163,10 @@ body {
   }
 }
 
+
 .index__card {
   h1 {
-
+    color: $licht_blauw;
   }
 
   &__rotate {
@@ -169,20 +175,34 @@ body {
       border-radius: 10px;
 
       h2 {
-
-      }
-
-      p{
-
+        font-size: $font_titel;
       }
     }
   }
 }
 
-.detail {
-  &__layout {
-    background-color: $licht_blauw;
-    border-radius: 10px;
+.index__contact {
+  &__links {
+
+  }
+
+  &__rechts {
+    h1 {
+      color: $licht_blauw;
+    }
+
+    p {
+      color: $wit
+    }
+
+    button {
+      @include buttonOpmaak($licht_blauw);
+      color: $zwart;
+
+      &:hover {
+        background-color: $blauw;
+      }
+    }
   }
 }
 
@@ -190,38 +210,27 @@ body {
 /*________product detail gegevens________*/
 .detail {
   &__layout {
-
-
-    &__aanzichten {
-
-
-      img {
-
-      }
-    }
+    background-color: $licht_blauw;
+    border-radius: 4px;
 
     &__foto {
       background-color: $blauw;
       border-radius: 20px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 
-      img {
-
-      }
     }
 
     &__tekst {
-
-
-
       &__stars {
-
-        p {
-
+        i, p {
+          color: $donkerder_blauw;
         }
       }
 
       &__info {
-
+        .aanwezigheid {
+          
+        }
       }
 
       &__options {

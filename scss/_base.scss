@@ -4,6 +4,7 @@ $blauw: #5f8688;
 $donker_blauw: #0a333e;
 $donkerder_blauw: #061a1f;
 $donker_thema: #1A1A1A;
+$zwart: #000000;
 
 $font_Oswald: 'Oswald', sans-serif;
 $font_Rubik: 'Rubik', sans-serif;
@@ -11,7 +12,7 @@ $font_Rubik: 'Rubik', sans-serif;
 $font_titel: 30px;
 $font_subtitel: 20px;
 $font_tekst: 18px;
-$font_klein: 15px;
+$font_klein: 16px;
 $font_kleinste: 10px;
 
 $card_counter: 3;
@@ -34,36 +35,35 @@ $card_counter: 3;
 @mixin kaderInput($margin_bottom) {
   box-sizing: border-box;
   padding: 8px;
+  margin-top: 5px;
   margin-bottom: $margin_bottom;
   width: 100%;
+  border-radius: 5px;
+  border: none;
 }
 
-/*nog aanpassen te passen met argument(.....)*/
-@mixin buttonOpmaakKlein($kleur) {
-  width: 40%;
+@mixin buttonOpmaak($kleur: $donker_blauw) {
+  background-color: $kleur;
+  color: $wit;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+@mixin buttonLayoutGroot() {
+  width: 55%;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin buttonLayoutKlein() {
+  width: 10%;
   padding: 12px;
   margin-top: 40px;
   border: none;
   cursor: pointer;
 }
 
-@mixin buttonOpmaakGroot($kleur) {
-
-}
-
-@mixin buttonLayoutGroot() {
-
-}
-
-@mixin buttonLayoutKlein() {
-
-}
-//
-//@mixin buttonStijl($achtergrond: $blauw) {
-//  background-color: $achtergrond;
-//  color: $wit;
-//  border: none;
-//  border-radius: 0 4px 4px 0;
-//  cursor: pointer;
-//  transition: background-color 0.3s;
-//}
