@@ -4,6 +4,16 @@
 }
 
 /*nog aanpassen te passen met argument(.....)*/
+/*_____fonds_____*/
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+label, p, a {
+  font-family: "Rubik", sans-serif;
+}
+
 body {
   background-color: #1A1A1A;
 }
@@ -23,46 +33,19 @@ body {
 .login__links .login__radio__forgot a, .login__links .login__radio__forgot label, .login__links .login__signin__more p {
   font-size: 15px;
 }
-.login__links h1 {
-  color: #061a1f;
-  font-family: "Rubik", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
 .login__links .login__signin__more i {
   font-size: 30px;
   color: #ffffff;
 }
-.login__links button {
-  background-color: #0a333e;
-  border-radius: 10px;
-  color: #aec0b4;
-  font-size: 18px;
-  font-weight: 500;
-}
 .login .signin__rechts {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-}
-.login .signin__rechts h1 {
-  color: #aec0b4;
-  font-family: "Rubik", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
 }
 .login .signin__rechts p {
   color: #aec0b4;
   font-size: 15px;
   font-family: "Oswald", sans-serif;
 }
-.login .signin__rechts button {
-  background-color: #aec0b4;
-  border-radius: 10px;
-  color: #0a333e;
-  font-size: 18px;
-  font-weight: 500;
-}
-
 .product__header {
   background-color: #f0f0f0;
   border-bottom-left-radius: 50px;
@@ -291,7 +274,7 @@ body {
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(0deg);
+  transform: rotate(-6deg);
 }
 .index__card__rotate__special:nth-child(2) {
   width: 350px;
@@ -299,7 +282,7 @@ body {
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(-5deg);
+  transform: rotate(-2deg);
 }
 .index__card__rotate__special:nth-child(3) {
   width: 350px;
@@ -307,7 +290,7 @@ body {
   border: none;
   margin: 25px;
   padding: 25px;
-  transform: rotate(0deg);
+  transform: rotate(-3deg);
 }
 
 .index__contact {

@@ -1,5 +1,18 @@
 @use 'base' as *;
 
+/*_____fonds_____*/
+h1, h2, h3 {
+  font-family: $font_Oswald;
+  font-weight: 500;
+}
+
+label, p, a {
+  font-family: $font_Rubik;
+}
+
+
+
+
 body {
   background-color: $donker_thema;
 }
@@ -24,7 +37,7 @@ body {
       }
 
       h1 {
-        @include titelKleur($donkerder_blauw);
+
       }
 
       .login__signin__more i {
@@ -33,7 +46,7 @@ body {
       }
 
       button {
-         @include buttonOpmaaklicht;
+
        }
     }
 
@@ -42,7 +55,7 @@ body {
       border-bottom-right-radius: 20px;
 
       h1 {
-        @include titelKleur($licht_blauw);
+
       }
 
       p {
@@ -52,7 +65,7 @@ body {
       }
 
       button {
-        @include buttonOpmaakDonker;
+
       }
     }
 }

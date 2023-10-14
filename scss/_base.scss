@@ -1,8 +1,8 @@
 $wit: #ffffff;
 $licht_blauw: #aec0b4;
 $blauw: #5f8688;
-$donkerder_blauw: #061a1f;
 $donker_blauw: #0a333e;
+$donkerder_blauw: #061a1f;
 $donker_thema: #1A1A1A;
 
 $font_Oswald: 'Oswald', sans-serif;
@@ -43,25 +43,31 @@ $card_counter: 3;
 }
 
 /*nog aanpassen te passen met argument(.....)*/
-@mixin buttonOpmaaklicht() {
-  background-color: $donker_blauw;
-  border-radius: 10px;
-  color: $licht_blauw;
-  font-size: $font_tekst;
-  font-weight: 500;
+@mixin buttonOpmaakKlein($kleur) {
+  width: 40%;
+  padding: 12px;
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
 }
 
-@mixin buttonOpmaakDonker() {
-  background-color: $licht_blauw;
-  border-radius: 10px;
-  color: $donker_blauw;
-  font-size: $font_tekst;
-  font-weight: 500;
+@mixin buttonOpmaakGroot($kleur) {
+
 }
 
-@mixin titelKleur($kleur_titel) {
-  color: $kleur_titel;
-  font-family: $font_Rubik;
-  font-weight: 600;
-  font-size: $font_titel;
+@mixin buttonLayoutGroot() {
+
 }
+
+@mixin buttonLayoutKlein() {
+
+}
+//
+//@mixin buttonStijl($achtergrond: $blauw) {
+//  background-color: $achtergrond;
+//  color: $wit;
+//  border: none;
+//  border-radius: 0 4px 4px 0;
+//  cursor: pointer;
+//  transition: background-color 0.3s;
+//}
