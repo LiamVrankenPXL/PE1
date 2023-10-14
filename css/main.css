@@ -23,6 +23,26 @@ body {
   background-color: #1A1A1A;
 }
 
+/*________nav gegevens________*/
+.navigatie {
+  margin-bottom: 25px;
+  background-color: transparent;
+}
+.navigatie ul {
+  color: white;
+  list-style: none;
+}
+.navigatie a {
+  text-decoration: none;
+  color: #aec0b4;
+}
+.navigatie a:hover {
+  color: #5f8688;
+}
+.navigatie a i {
+  color: #aec0b4;
+}
+
 /*_____login_____*/
 .login__links {
   border-top-left-radius: 20px;
@@ -186,6 +206,26 @@ body {
 }
 
 /*________nav gegevens________*/
+.navigatie ul {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  margin: 0;
+  height: 3rem;
+}
+.navigatie li {
+  margin: 0 1rem;
+}
+.navigatie li:nth-child(2), .navigatie li:nth-child(3) {
+  text-decoration: none;
+}
+.navigatie li.logo {
+  margin: 20px auto 0 20px;
+}
+.navigatie img {
+  width: 45px;
+}
+
 /*________login gegevens________*/
 .login {
   display: flex;
