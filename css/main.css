@@ -3,54 +3,59 @@
   padding: 0;
 }
 
-.login__background .login__layout .login__links {
+/*nog aanpassen te passen met argument(.....)*/
+body {
+  background-color: #1A1A1A;
+}
+
+.login__links {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-.login__background .login__layout .login__links p, .login__background .login__layout .login__links label, .login__background .login__layout .login__links .login__radio__forgot a {
+.login__links p, .login__links label, .login__links .login__radio__forgot a {
   color: #061a1f;
   font-family: "Oswald", sans-serif;
   font-size: 18px;
 }
-.login__background .login__layout .login__links label {
+.login__links label {
   font-size: 15px;
 }
-.login__background .login__layout .login__links .login__radio__forgot a, .login__background .login__layout .login__links .login__radio__forgot label, .login__background .login__layout .login__links .login__signin__more p {
+.login__links .login__radio__forgot a, .login__links .login__radio__forgot label, .login__links .login__signin__more p {
   font-size: 15px;
 }
-.login__background .login__layout .login__links h1 {
+.login__links h1 {
   color: #061a1f;
   font-family: "Rubik", sans-serif;
   font-weight: 600;
   font-size: 30px;
 }
-.login__background .login__layout .login__links .login__signin__more i {
+.login__links .login__signin__more i {
   font-size: 30px;
   color: #ffffff;
 }
-.login__background .login__layout .login__links button {
+.login__links button {
   background-color: #0a333e;
   border-radius: 10px;
   color: #aec0b4;
   font-size: 18px;
   font-weight: 500;
 }
-.login__background .login__layout .signin__rechts {
+.login .signin__rechts {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.login__background .login__layout .signin__rechts h1 {
+.login .signin__rechts h1 {
   color: #aec0b4;
   font-family: "Rubik", sans-serif;
   font-weight: 600;
   font-size: 30px;
 }
-.login__background .login__layout .signin__rechts p {
+.login .signin__rechts p {
   color: #aec0b4;
   font-size: 15px;
   font-family: "Oswald", sans-serif;
 }
-.login__background .login__layout .signin__rechts button {
+.login .signin__rechts button {
   background-color: #aec0b4;
   border-radius: 10px;
   color: #0a333e;
@@ -58,7 +63,75 @@
   font-weight: 500;
 }
 
-.login__background {
+.product__header {
+  background-color: #f0f0f0;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.product__header .product__search__bar input {
+  border: 1px solid #aec0b4;
+  border-radius: 4px 0 0 4px;
+}
+.product__header .product__search__bar button {
+  background-color: #5f8688;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product__header .product__search__bar button:hover {
+  background-color: #061a1f;
+}
+
+.product__mid__card {
+  background-color: #5f8688;
+  border: none;
+  border-radius: 8px;
+}
+.product__mid__card img {
+  border-radius: 8px 8px 0 0;
+}
+.product__mid__card__details span {
+  font-weight: bold;
+}
+.product__mid__card__details button {
+  background-color: #0a333e;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product__mid__card__details button:hover {
+  background-color: #061a1f;
+}
+
+.index__header__links h1 {
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.index__header__links p {
+  color: #ffffff;
+}
+.index__header__links button {
+  background-color: #0a333e;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.index__header__links button:hover {
+  background-color: #061a1f;
+}
+
+.index__card__rotate__special {
+  background-color: #5f8688;
+  border-radius: 10px;
+}
+/*________login gegevens________*/
+.login {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,55 +140,55 @@
   margin: 0 auto;
   background-color: #aec0b4;
 }
-.login__background .login__layout {
+.login .login__layout {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   align-items: stretch;
 }
-.login__background .login__layout .login__links {
+.login .login__layout .login__links {
   flex: 2;
   flex-direction: column;
   padding: 35px;
   background-color: #5f8688;
 }
-.login__background .login__layout .login__links h1 {
+.login .login__layout .login__links h1 {
   padding-bottom: 30px;
   text-align: center;
 }
-.login__background .login__layout .login__links .login__gegevens .login__adres__kader {
+.login .login__layout .login__links .login__gegevens .login__adres__kader {
   box-sizing: border-box;
   padding: 8px;
   margin-bottom: 10px;
   width: 100%;
 }
-.login__background .login__layout .login__links .login__gegevens .login__wachtwoord__kader {
+.login .login__layout .login__links .login__gegevens .login__wachtwoord__kader {
   box-sizing: border-box;
   padding: 8px;
   margin-bottom: 2px;
   width: 100%;
 }
-.login__background .login__layout .login__links .login__gegevens .login__radio__forgot a {
+.login .login__layout .login__links .login__gegevens .login__radio__forgot a {
   padding-left: 15px;
 }
-.login__background .login__layout .login__links .login__gegevens .login__sumbit {
+.login .login__layout .login__links .login__gegevens .login__sumbit {
   margin-top: 7px;
   margin-bottom: 15px;
   text-align: center;
 }
-.login__background .login__layout .login__links .login__gegevens .login__sumbit button {
+.login .login__layout .login__links .login__gegevens .login__sumbit button {
   width: 60%;
   padding: 12px;
   margin: 15px;
   border: none;
   cursor: pointer;
 }
-.login__background .login__layout .login__links .login__gegevens .login__signin__more i {
+.login .login__layout .login__links .login__gegevens .login__signin__more i {
   padding-top: 5px;
   margin-right: 10px;
 }
-.login__background .login__layout .signin__rechts {
+.login .login__layout .signin__rechts {
   flex: 1.5;
   flex-direction: column;
   padding: 35px;
@@ -124,19 +197,138 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.login__background .login__layout .signin__rechts h1 {
+.login .login__layout .signin__rechts h1 {
   padding-bottom: 10px;
   text-align: center;
 }
-.login__background .login__layout .signin__rechts .signin__sumbit {
+.login .login__layout .signin__rechts .signin__sumbit {
   margin-top: 7px;
   margin-bottom: 15px;
   text-align: center;
 }
-.login__background .login__layout .signin__rechts .signin__sumbit button {
+.login .login__layout .signin__rechts .signin__sumbit button {
   width: 60%;
   padding: 12px;
   margin: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/*________product header gegevens________*/
+.product__header {
+  height: 100px;
+  padding: 30px 15px 15px 15px;
+  text-align: center;
+}
+.product__header h1 {
+  margin-bottom: 10px;
+}
+
+.product__search {
+  padding: 20px;
+  text-align: center;
+}
+.product__search .product__layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product__search__bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.product__search__bar input {
+  padding: 10px;
+  width: 70%;
+}
+.product__search__bar button {
+  padding: 10px 12px;
+}
+
+/*________product cards gegevens________*/
+/*________start pagina gegevens________*/
+.index__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100vh;
+}
+.index__header__links {
+  flex-direction: column;
+  flex-basis: 25%;
+  margin-right: 50px;
+}
+.index__header__links button {
+  width: 40%;
+  padding: 12px;
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
+}
+.index__header__rechts {
+  flex-direction: column;
+  flex-basis: 30%;
+}
+.index__header__rechts img {
+  width: 100%;
+  height: 100%;
+}
+
+.index__card h1 {
+  text-align: center;
+  margin: 0 10px 20px 10px;
+}
+.index__card__rotate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.index__card__rotate__special:nth-child(1) {
+  width: 350px;
+  height: 300px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transform: rotate(0deg);
+}
+.index__card__rotate__special:nth-child(2) {
+  width: 350px;
+  height: 300px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transform: rotate(-5deg);
+}
+.index__card__rotate__special:nth-child(3) {
+  width: 350px;
+  height: 300px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transform: rotate(0deg);
+}
+
+.index__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20px;
+  padding: 20px;
+}
+.index__contact__links img {
+  width: 40%;
+  height: auto;
+}
+.index__contact__rechts {
+  flex: 1;
+}
+.index__contact__rechts button {
+  width: 40%;
+  padding: 12px;
+  margin-top: 40px;
   border: none;
   cursor: pointer;
 }

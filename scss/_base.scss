@@ -3,6 +3,7 @@ $licht_blauw: #aec0b4;
 $blauw: #5f8688;
 $donkerder_blauw: #061a1f;
 $donker_blauw: #0a333e;
+$donker_thema: #1A1A1A;
 
 $font_Oswald: 'Oswald', sans-serif;
 $font_Rubik: 'Rubik', sans-serif;
@@ -13,12 +14,16 @@ $font_tekst: 18px;
 $font_klein: 15px;
 $font_kleinste: 10px;
 
+$card_counter: 3;
 
 * {
   margin: 0;
   padding: 0;
 }
 
+@mixin randomRotation() {
+  transform: rotate((random(10) - 8) + deg);
+}
 
 @mixin flexLayout() {
   display: flex;
@@ -26,6 +31,9 @@ $font_kleinste: 10px;
   justify-content: center;
 }
 
+@mixin textAlign($align){
+  text-align: $align;
+}
 
 @mixin kaderInput($margin_bottom) {
   box-sizing: border-box;
@@ -34,7 +42,7 @@ $font_kleinste: 10px;
   width: 100%;
 }
 
-
+/*nog aanpassen te passen met argument(.....)*/
 @mixin buttonOpmaaklicht() {
   background-color: $donker_blauw;
   border-radius: 10px;
