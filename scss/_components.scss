@@ -140,36 +140,59 @@ body {
 }
 
 
-//.product__mid {
-//  &__card {
-//    background-color: $blauw;
-//    border: none;
-//    border-radius: 8px;
-//
-//    img {
-//      border-radius: 8px 8px 0 0;
-//    }
-//
-//    &__details {
-//      span {
-//        font-weight: bold;
-//      }
-//
-//      button {
-//        background-color: $donker_blauw;
-//        color: $wit;
-//        border: none;
-//        border-radius: 4px;
-//        cursor: pointer;
-//        transition: background-color 0.3s;
-//
-//        &:hover {
-//          background-color: $donkerder_blauw;
-//        }
-//      }
-//    }
-//  }
-//}
+/*________product cards gegevens________*/
+.card {
+  &__title {
+    color: $licht_blauw;
+  }
+
+  &__description {
+    color: $wit;
+  }
+
+  &__details {
+    p {
+      font-weight: bold;
+      color: $licht_blauw;
+    }
+
+    button {
+      @include buttonOpmaak($licht_blauw);
+      margin: 0 auto;
+      color: $donkerder_blauw;
+
+      &:hover {
+        background-color: $blauw;
+      }
+    }
+  }
+}
+
+
+/*________pagination gegevens________*/
+.pagination {
+    a {
+      display: block;
+      text-decoration: none;
+      color: $donkerder_blauw;
+      background-color: $licht_blauw;
+      font-size: $font_klein;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+
+      &.active {
+        background-color: $blauw;
+        color: $wit;
+      }
+
+      &:hover {
+        background-color: $blauw;
+      }
+    }
+
+}
+
 
 
 .index__header {
@@ -299,7 +322,7 @@ body {
 }
 
 
-
+/*________footer gegevens________*/
 .footer {
   @include flexLayout;
   background-color: $blauw;
