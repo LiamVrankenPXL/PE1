@@ -228,5 +228,93 @@
 }
 
 
+/*________product detail gegevens________*/
+.detail {
+  @include flexLayout;
+  width: 100vw;
+  height: 100vh;
+
+  &__layout {
+    @include flexLayout;
+    flex-direction: row;
+    width: 80%;
+    height: 70%;
+    margin: 20px;
+    padding: 20px;
+
+    &__aanzichten {
+      @include flexLayout;
+      flex-direction: column;
+      width: 10%;
+
+      img {
+        margin-top: 20px;
+        width: 60%;
+        height: auto;
+      }
+    }
+
+    &__foto {
+      width: 35%; /* 40% van de breedte van .detail__layout */
+      padding: 10px;
+      margin: 0 15px 0 0 ;
+
+      img {
+        width: 90%;
+        height: auto;
+      }
+    }
+
+    &__tekst {
+      width: 50%; /* 45% van de breedte van .detail__layout */
+      align-self: self-start;
+      margin-top: 70px;
+      flex: 1;
+
+      &__stars {
+        display: flex;
+        flex-direction: row;
+
+        p {
+          margin-left: 10px;
+        }
+      }
+
+      &__info {
+        h2 {
+          margin-top: 50px;
+        }
+
+        p {
+          margin-top: 5px;
+        }
+      }
+
+      &__options {
+        margin: 20px 0 10px 0;
+
+        a {
+          margin: 0 20px 0 0;
+          padding: 0 10px 0 0;
+          border-right: 1px solid black;
+        }
+      }
+
+      &__buttons {
+        button {
+          width: 15%;
+          padding: 12px;
+          margin-top: 40px;
+          border: none;
+          cursor: pointer;
+        }
+
+      }
+    }
+  }
+}
+
+
+
 
 
