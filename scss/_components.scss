@@ -26,6 +26,14 @@ body {
   background-color: $donker_thema;
 }
 
+#achtergrond {
+  background-image: url("assets/images/achtergrond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  z-index: 1;
+}
+
 
 /*________nav gegevens________*/
 .navigatie {
