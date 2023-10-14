@@ -4,6 +4,10 @@
 }
 
 /*nog aanpassen te passen met argument(.....)*/
+body {
+  background-color: #1A1A1A;
+}
+
 .login__links {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -59,6 +63,74 @@
   font-weight: 500;
 }
 
+.product__header {
+  background-color: #f0f0f0;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.product__header .product__search__bar input {
+  border: 1px solid #aec0b4;
+  border-radius: 4px 0 0 4px;
+}
+.product__header .product__search__bar button {
+  background-color: #5f8688;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product__header .product__search__bar button:hover {
+  background-color: #061a1f;
+}
+
+.product__mid__card {
+  background-color: #5f8688;
+  border: none;
+  border-radius: 8px;
+}
+.product__mid__card img {
+  border-radius: 8px 8px 0 0;
+}
+.product__mid__card__details span {
+  font-weight: bold;
+}
+.product__mid__card__details button {
+  background-color: #0a333e;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product__mid__card__details button:hover {
+  background-color: #061a1f;
+}
+
+.index__header__links h1 {
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.index__header__links p {
+  color: #ffffff;
+}
+.index__header__links button {
+  background-color: #0a333e;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.index__header__links button:hover {
+  background-color: #061a1f;
+}
+
+.index__card__rotate__special {
+  background-color: #aec0b4;
+  border-radius: 10px;
+}
+/*________login gegevens________*/
 .login {
   display: flex;
   align-items: center;
@@ -142,22 +214,100 @@
   cursor: pointer;
 }
 
-.product__layout {
+/*________product header gegevens________*/
+.product__header {
+  height: 100px;
+  padding: 30px 15px 15px 15px;
   text-align: center;
 }
-.product__intro {
+.product__header h1 {
+  margin-bottom: 10px;
+}
+
+.product__search {
+  padding: 20px;
+  text-align: center;
+}
+.product__search .product__layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product__search__bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.product__search__bar input {
+  padding: 10px;
+  width: 70%;
+}
+.product__search__bar button {
+  padding: 10px 12px;
+}
+
+/*________product cards gegevens________*/
+/*________start pagina gegevens________*/
+.index__header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  height: 100vh;
 }
-.product__intro__links {
+.index__header__links {
   flex-direction: column;
-  margin: 20px;
+  flex-basis: 25%;
+  margin-right: 50px;
 }
-.product__intro__rechts {
+.index__header__links button {
+  width: 40%;
+  padding: 12px;
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
+}
+.index__header__rechts {
   flex-direction: column;
-  margin: 20px;
+  flex-basis: 30%;
+}
+.index__header__rechts img {
+  width: 100%;
+  height: 100%;
+}
+
+.index__card h1 {
+  text-align: center;
+  margin: 0 10px 20px 10px;
+}
+.index__card__rotate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.index__card__rotate__special:nth-child(1) {
+  width: 350px;
+  height: 300px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transform: rotate(-6deg);
+}
+.index__card__rotate__special:nth-child(2) {
+  width: 350px;
+  height: 300px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transform: rotate(0deg);
+}
+.index__card__rotate__special:nth-child(3) {
+  width: 350px;
+  height: 300px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transform: rotate(-6deg);
 }
 
 /*# sourceMappingURL=main.css.map */

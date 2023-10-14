@@ -1,5 +1,8 @@
 @use 'base' as *;
 
+body {
+  background-color: $donker_thema;
+}
 
 .login {
     &__links {
@@ -55,7 +58,111 @@
 }
 
 
+.product__header {
+  background-color: #f0f0f0;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  .product__search {
+    &__bar {
+      input {
+        border: 1px solid $licht_blauw;
+        border-radius: 4px 0 0 4px;
+      }
+
+      button {
+        background-color: $blauw;
+        color: $wit;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $donkerder_blauw;
+        }
+      }
+    }
+  }
+}
 
 
+.product__mid {
+  &__card {
+    background-color: $blauw;
+    border: none;
+    border-radius: 8px;
 
+    img {
+      border-radius: 8px 8px 0 0;
+    }
+
+    &__details {
+      span {
+        font-weight: bold;
+      }
+
+      button {
+        background-color: $donker_blauw;
+        color: $wit;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $donkerder_blauw;
+        }
+      }
+    }
+  }
+}
+
+
+.index__header {
+  &__links {
+    h1 {
+      color: $wit;
+      margin-bottom: 25px;
+    }
+
+    p {
+      color: $wit;
+    }
+
+    button {
+      background-color: $donker_blauw;
+      color: $wit;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+}
+
+.index__card {
+  h1 {
+
+  }
+
+  &__rotate {
+    &__special {
+      background-color: $licht_blauw;
+      border-radius: 10px;
+
+      h2 {
+
+      }
+
+      p{
+
+      }
+    }
+  }
+}
 
