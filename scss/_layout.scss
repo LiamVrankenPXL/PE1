@@ -1,5 +1,33 @@
 @use 'base' as *;
 
+/*________nav gegevens________*/
+.navigatie {
+  ul {
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    margin: 0;
+    height: 3rem;
+  }
+
+  li {
+    margin: 0 1rem;
+  }
+
+  li:nth-child(2), li:nth-child(3) {
+    text-decoration: none;
+  }
+
+  li.logo {
+    margin: 20px auto 0 20px;
+  }
+
+  img {
+    width: 45px;
+  }
+}
+
+
 
 /*________login gegevens________*/
 .login {
@@ -46,11 +74,7 @@
           text-align: center;
 
           button {
-            width: 60%;
-            padding: 12px;
-            margin: 15px;
-            border: none;
-            cursor: pointer;
+            @include buttonLayoutGroot;
           }
         }
 
@@ -83,11 +107,7 @@
         text-align: center;
 
         button {
-          width: 60%;
-          padding: 12px;
-          margin: 15px;
-          border: none;
-          cursor: pointer;
+          @include buttonLayoutGroot;
         }
       }
     }
@@ -315,6 +335,93 @@
 
       }
     }
+  }
+}
+
+
+
+/*________footer gegevens________*/
+.footer {
+  @include flexLayout;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+
+  > * {
+    flex: 1 100%;
+  }
+
+  &__addr {
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    button {
+      @include flexLayout;
+      @include buttonLayoutGroot;
+      width: 30%;
+      margin-left: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-flow: row wrap;
+
+    > * {
+      flex: 1 50%;
+      margin-right: 20px;
+    }
+
+    &-item {
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      &-title {
+        margin-bottom: 10px;
+      }
+
+      &-ul {
+        padding-left: 0;
+      }
+
+      &-ul--extra {
+        column-count: 2;
+        column-gap: 1.25em;
+      }
+    }
+  }
+
+  &__legal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+
+  .footer__addr {
+    flex: 1 0px;
+  }
+
+  .footer__nav {
+    flex: 2 0px;
   }
 }
 

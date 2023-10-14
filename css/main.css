@@ -19,8 +19,33 @@ label, p, a {
   color: #000000;
 }
 
+li, a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 body {
   background-color: #1A1A1A;
+}
+
+/*________nav gegevens________*/
+.navigatie {
+  margin-bottom: 25px;
+  background-color: transparent;
+}
+.navigatie ul {
+  color: white;
+  list-style: none;
+}
+.navigatie a {
+  text-decoration: none;
+  color: #aec0b4;
+}
+.navigatie a:hover {
+  color: #5f8688;
+}
+.navigatie a i {
+  color: #aec0b4;
 }
 
 /*_____login_____*/
@@ -183,6 +208,57 @@ body {
 }
 .detail__layout__tekst__buttons button:hover {
   background-color: #061a1f;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5f8688;
+}
+.footer__addr address button {
+  background-color: #aec0b4;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.footer__addr address button:hover {
+  background-color: #0a333e;
+}
+.footer__nav-ul {
+  list-style: none;
+}
+.footer__nav-ul a {
+  text-decoration: none;
+  color: #0a333e;
+}
+.footer__legal {
+  border-top: 1px solid #0a333e;
+  padding: 10px;
+  color: #999;
+}
+
+/*________nav gegevens________*/
+.navigatie ul {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  margin: 0;
+  height: 3rem;
+}
+.navigatie li {
+  margin: 0 1rem;
+}
+.navigatie li:nth-child(2), .navigatie li:nth-child(3) {
+  text-decoration: none;
+}
+.navigatie li.logo {
+  margin: 20px auto 0 20px;
+}
+.navigatie img {
+  width: 45px;
 }
 
 /*________login gegevens________*/
@@ -469,6 +545,82 @@ body {
   margin-top: 40px;
   border: none;
   cursor: pointer;
+}
+
+/*________footer gegevens________*/
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+}
+.footer > * {
+  flex: 1 100%;
+}
+.footer__addr {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.footer__addr h2 {
+  margin-top: 20px;
+}
+.footer__addr button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  margin-left: 0;
+}
+.footer__nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 20px;
+}
+.footer__nav-item h2 {
+  margin-bottom: 20px;
+}
+.footer__nav-item-title {
+  margin-bottom: 10px;
+}
+.footer__nav-item-ul {
+  padding-left: 0;
+}
+.footer__nav-item-ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+.footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  .footer__addr {
+    flex: 1 0px;
+  }
+  .footer__nav {
+    flex: 2 0px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
