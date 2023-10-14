@@ -21,10 +21,6 @@ $card_counter: 3;
   padding: 0;
 }
 
-@mixin randomRotation() {
-  transform: rotate((random(10) - 8) + deg);
-}
-
 @mixin flexLayout() {
   display: flex;
   align-items: center;

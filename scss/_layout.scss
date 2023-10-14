@@ -184,11 +184,19 @@
         border: none;
         margin: 25px;
         padding: 25px;
-        @include randomRotation();
+
+        @if $teller == 1 {
+          transform: rotate(2deg);
+        } @else if $teller == 2 {
+          transform: rotate(5deg);
+        } @else if $teller == 3 {
+          transform: rotate(-10deg);
+        }
       }
     }
   }
 }
+
 
 
 .index__contact {
