@@ -64,6 +64,7 @@ body {
 }
 .login__links button {
   background-color: #0a333e;
+  font-size: 16px;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -86,6 +87,7 @@ body {
 }
 .login .signin__rechts button {
   background-color: #aec0b4;
+  font-size: 16px;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -118,6 +120,33 @@ body {
   background-color: #061a1f;
 }
 
+/*_____product cards_____*/
+/*________product cards gegevens________*/
+.card__title {
+  color: #aec0b4;
+}
+.card__description {
+  color: #ffffff;
+}
+.card__details p {
+  font-weight: bold;
+  color: #aec0b4;
+}
+.card__details button {
+  background-color: #aec0b4;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+  color: #061a1f;
+}
+.card__details button:hover {
+  background-color: #5f8688;
+}
+
 .index__header__links h1 {
   color: #aec0b4;
   margin-bottom: 25px;
@@ -127,6 +156,7 @@ body {
 }
 .index__header__links button {
   background-color: #0a333e;
+  font-size: 16px;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -156,6 +186,7 @@ body {
 }
 .index__contact__rechts button {
   background-color: #aec0b4;
+  font-size: 16px;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -200,6 +231,7 @@ body {
 }
 .detail__layout__tekst__buttons button {
   background-color: #0a333e;
+  font-size: 16px;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -210,6 +242,7 @@ body {
   background-color: #061a1f;
 }
 
+/*________footer gegevens________*/
 .footer {
   display: flex;
   align-items: center;
@@ -218,6 +251,7 @@ body {
 }
 .footer__addr address button {
   background-color: #aec0b4;
+  font-size: 16px;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -384,6 +418,47 @@ body {
 }
 
 /*________product cards gegevens________*/
+.card__layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 20%;
+  height: auto;
+  margin: 20px;
+}
+.card__image {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.card__content {
+  padding: 15px;
+  text-align: center;
+}
+.card__title {
+  margin-bottom: 10px;
+}
+.card__details {
+  text-align: center;
+}
+.card__details p {
+  margin-bottom: 15px;
+}
+.card__details button {
+  width: 60%;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
 /*________start pagina gegevens________*/
 .index__header {
   display: flex;
