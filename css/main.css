@@ -242,6 +242,14 @@ body {
   background-color: #061a1f;
 }
 
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
 /*________PRODUCT DETAIL EINDE________*/
 /*________INDEX START________*/
 .index__header__links h1 {
@@ -667,57 +675,90 @@ body {
 /*________PRODUCT DETAIL________*/
 .detail {
   display: flex;
-  align-items: center;
+  width: 95vw;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  align-items: center;
 }
 .detail__layout {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  width: 80%;
-  height: 70%;
+  width: 65%;
+  height: 65%;
   margin: 20px;
   padding: 20px;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1200px) {
+  .detail__layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail__layout .detail__layout__foto {
+    width: 100%;
+    margin: 0;
+  }
+  .detail__layout .detail__layout__tekst {
+    text-align: left;
+    align-self: flex-start;
+    margin-top: 20px;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .detail__layout {
+    flex-direction: row;
+  }
+  .detail__layout__tekst {
+    width: 30%;
+    font-size: 0.8em;
+    margin-top: 0;
+  }
+  .detail__layout__foto {
+    width: 70%;
+    margin: 0;
+  }
+}
+.detail__layout__foto {
+  width: 60%;
+  padding: 10px;
+  margin: 0 15px 0 0;
+  position: relative;
+}
+.detail__layout__foto img {
+  width: 100%;
+  height: auto;
 }
 .detail__layout__aanzichten {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 10%;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 .detail__layout__aanzichten img {
-  margin-top: 20px;
-  width: 60%;
+  width: 20%;
   height: auto;
-}
-.detail__layout__foto {
-  width: 35%; /* 40% van de breedte van .detail__layout */
-  padding: 10px;
-  margin: 0 15px 0 0;
-}
-.detail__layout__foto img {
-  width: 90%;
-  height: auto;
+  margin: 0 5px 10px;
 }
 .detail__layout__tekst {
-  width: 50%; /* 45% van de breedte van .detail__layout */
-  align-self: self-start;
-  margin-top: 70px;
+  width: 70%;
+  align-self: flex-start; /* Aangepast naar flex-start */
+  margin-top: 20px;
   flex: 1;
 }
 .detail__layout__tekst__stars {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+}
+.detail__layout__tekst__stars i {
+  margin-left: 5px;
 }
 .detail__layout__tekst__stars p {
   margin-left: 10px;
 }
-.detail__layout__tekst__info h2 {
-  margin-top: 50px;
+.detail__layout__tekst__info h1 {
+  margin-top: 20px;
 }
 .detail__layout__tekst__info p {
   margin-top: 5px;
@@ -730,12 +771,20 @@ body {
   padding: 0 10px 0 0;
   border-right: 1px solid black;
 }
+.detail__layout__tekst__options a:last-child {
+  border-right: none;
+}
+.detail__layout__tekst__About p {
+  margin-top: 20px;
+}
 .detail__layout__tekst__buttons button {
-  width: 10%;
   padding: 12px;
   margin-top: 40px;
   border: none;
   cursor: pointer;
+}
+.detail__layout__tekst__buttons button:last-child {
+  margin-left: 10px;
 }
 
 /*________PRODUCT DETAIL EINDE________*/
