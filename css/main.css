@@ -102,6 +102,10 @@ body {
 .login .signin__rechts {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  background-image: url("../assets/images/abstract_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .login .signin__rechts h1 {
   font-size: 30px;
@@ -150,6 +154,16 @@ body {
 }
 .product__header .product__search__bar button:hover {
   background-color: #061a1f;
+}
+
+.product__filter .filter-option {
+  transition: background-color 0.3s;
+  background-color: #5f8688;
+  border-radius: 4px;
+}
+.product__filter .filter-option:hover {
+  background-color: #0a333e;
+  color: #aec0b4;
 }
 
 /*________product cards gegevens________*/
@@ -208,6 +222,11 @@ body {
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
+@media screen and (min-width: 1800px) {
+  .detail__layout__tekst {
+    font-size: 18px;
+  }
+}
 .detail__layout__tekst__stars i, .detail__layout__tekst__stars p {
   color: #061a1f;
 }
@@ -221,6 +240,10 @@ body {
 .detail__layout__tekst__options a {
   text-decoration: none;
   color: #000000;
+  border-right: 1px solid black;
+}
+.detail__layout__tekst__options a:last-child {
+  border-right: none;
 }
 .detail__layout__tekst__options a:first-child {
   font-weight: 600;
@@ -241,7 +264,24 @@ body {
 .detail__layout__tekst__buttons button:hover {
   background-color: #061a1f;
 }
+.detail__layout__tekst .quantityDropdown {
+  background-color: #0a333e;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
 /*________PRODUCT DETAIL EINDE________*/
 /*________INDEX START________*/
 .index__header__links h1 {
@@ -264,6 +304,16 @@ body {
   background-color: #061a1f;
 }
 
+@media (max-width: 1200px) {
+  .index__header h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .index__header__links h1 {
+    font-size: 24px;
+  }
+}
 /* Basisstijlen voor de kijker start*/
 .index__kijker__rechts h1 {
   color: #aec0b4;
@@ -285,9 +335,15 @@ body {
   background-color: #061a1f;
 }
 
+@media (max-width: 768px) {
+  .index__kijker h1 {
+    font-size: 24px;
+  }
+}
 /* index cards */
 .index__card h1 {
   color: #aec0b4;
+  font-size: 45px;
 }
 .index__card__rotate__special {
   background-color: #5f8688;
@@ -317,6 +373,11 @@ body {
   background-color: #061a1f;
 }
 
+@media (max-width: 768px) {
+  .index__card h1 {
+    font-size: 24px;
+  }
+}
 /*________INDEX EINDE________*/
 /*________FOOTER START________*/
 .footer {
@@ -324,7 +385,7 @@ body {
 }
 @media (max-width: 767px) {
   .footer .footer__titel {
-    font-size: 22px;
+    font-size: 24px;
   }
   .footer .footer__tekst {
     font-size: 14px;
@@ -487,10 +548,6 @@ body {
   flex: 1.5;
   flex-direction: column;
   padding: 35px;
-  background-image: url("../assets/images/abstract_background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .login .login__layout .signin__rechts h1 {
   padding-bottom: 10px;
@@ -564,13 +621,6 @@ body {
   padding: 8px 16px;
   margin: 0 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  background-color: #5f8688;
-  border-radius: 4px;
-}
-.product__search .product__filter .filter-option:hover {
-  background-color: #0a333e;
-  color: #aec0b4;
 }
 
 /*________product cards gegevens start________*/
@@ -584,10 +634,9 @@ body {
 @media (max-width: 767px) {
   .card__layout {
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .card__layout .card {
-    width: 48%; /* Twee kaarten naast elkaar */
+    width: 90%; /* Twee kaarten naast elkaar */
     margin: 0 0 30px 0; /* Voeg een margin-bottom toe */
   }
 }
@@ -667,57 +716,89 @@ body {
 /*________PRODUCT DETAIL________*/
 .detail {
   display: flex;
-  align-items: center;
+  width: 95vw;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  align-items: center;
 }
 .detail__layout {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  width: 80%;
-  height: 70%;
+  width: 65%;
+  height: 65%;
   margin: 20px;
   padding: 20px;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1200px) {
+  .detail__layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail__layout .detail__layout__foto {
+    width: 100%;
+    margin: 0;
+  }
+  .detail__layout .detail__layout__tekst {
+    text-align: left;
+    align-self: flex-start;
+    margin-top: 20px;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .detail__layout {
+    flex-direction: row;
+  }
+  .detail__layout__tekst {
+    width: 30%;
+    margin-top: 0;
+  }
+  .detail__layout__foto {
+    width: 70%;
+    margin: 0;
+  }
+}
+.detail__layout__foto {
+  width: 60%;
+  padding: 10px;
+  margin: 0 15px 0 0;
+  position: relative;
+}
+.detail__layout__foto img {
+  width: 100%;
+  height: auto;
 }
 .detail__layout__aanzichten {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 10%;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 .detail__layout__aanzichten img {
-  margin-top: 20px;
-  width: 60%;
+  width: 20%;
   height: auto;
-}
-.detail__layout__foto {
-  width: 35%; /* 40% van de breedte van .detail__layout */
-  padding: 10px;
-  margin: 0 15px 0 0;
-}
-.detail__layout__foto img {
-  width: 90%;
-  height: auto;
+  margin: 0 5px 10px;
 }
 .detail__layout__tekst {
-  width: 50%; /* 45% van de breedte van .detail__layout */
-  align-self: self-start;
-  margin-top: 70px;
+  width: 70%;
+  align-self: flex-start; /* Aangepast naar flex-start */
+  margin-top: 20px;
   flex: 1;
 }
 .detail__layout__tekst__stars {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+}
+.detail__layout__tekst__stars i {
+  margin-left: 5px;
 }
 .detail__layout__tekst__stars p {
   margin-left: 10px;
 }
-.detail__layout__tekst__info h2 {
-  margin-top: 50px;
+.detail__layout__tekst__info h1 {
+  margin-top: 20px;
 }
 .detail__layout__tekst__info p {
   margin-top: 5px;
@@ -728,10 +809,20 @@ body {
 .detail__layout__tekst__options a {
   margin: 0 20px 0 0;
   padding: 0 10px 0 0;
-  border-right: 1px solid black;
+}
+.detail__layout__tekst__About p {
+  margin-top: 20px;
 }
 .detail__layout__tekst__buttons button {
-  width: 10%;
+  padding: 12px;
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
+}
+.detail__layout__tekst__buttons button:last-child {
+  margin-left: 10px;
+}
+.detail__layout__tekst .quantityDropdown {
   padding: 12px;
   margin-top: 40px;
   border: none;
@@ -745,12 +836,11 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 100vh;
+  margin-top: 75px;
 }
 .index__header__links {
   flex-direction: column;
-  flex-basis: 25%;
-  margin-right: 50px;
+  flex-basis: 40%;
 }
 .index__header__links h1 {
   margin-bottom: 10px;
@@ -764,32 +854,44 @@ body {
 }
 .index__header__rechts {
   flex-direction: column;
-  flex-basis: 30%;
+  flex-basis: 40%;
 }
 .index__header__rechts img {
-  margin-top: -100px;
-  width: 150%;
-  height: 150%;
+  width: 100%;
+  height: 100%;
 }
 
+@media (max-width: 768px) {
+  .index__header {
+    text-align: center;
+    flex-direction: column;
+  }
+  .index__header__links {
+    width: 70%;
+  }
+  .index__header__rechts img {
+    margin-top: 25px;
+  }
+  .index__header img {
+    width: 50%;
+  }
+}
 /* Basisstijlen voor de kijker start*/
 .index__kijker {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 60px 20px 20px 20px;
   padding: 20px;
-  height: 65vh;
 }
 .index__kijker__links {
   flex-basis: 30%;
   text-align: center;
 }
 .index__kijker__links img {
-  max-width: 75%;
+  margin-right: 30px;
+  width: 100%;
   height: auto;
-}
-.index__kijker__links img:hover {
-  transform: scale(1.25);
 }
 .index__kijker__rechts {
   flex-basis: 25%;
@@ -807,21 +909,38 @@ body {
   margin-top: 35px;
 }
 
+@media (max-width: 768px) {
+  .index__kijker {
+    flex-direction: column;
+  }
+  .index__kijker button {
+    width: 20%;
+    padding: 8px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .index__kijker img {
+    width: 50%;
+  }
+}
 /* index cards */
+.index__card {
+  margin-top: 30px;
+}
 .index__card h1 {
   text-align: center;
-  margin: 0 10px 50px 10px;
+  margin: 25px 10px 15px 10px;
 }
 .index__card h2 {
   margin: 0 0 20px 0;
 }
 .index__card__rotate {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .index__card__rotate__special:nth-child(1) {
-  width: 350px;
+  width: 25%;
   height: 350px;
   border: none;
   margin: 25px;
@@ -841,7 +960,7 @@ body {
   color: #061a1f;
 }
 .index__card__rotate__special:nth-child(2) {
-  width: 350px;
+  width: 25%;
   height: 350px;
   border: none;
   margin: 25px;
@@ -861,7 +980,7 @@ body {
   color: #061a1f;
 }
 .index__card__rotate__special:nth-child(3) {
-  width: 350px;
+  width: 25%;
   height: 350px;
   border: none;
   margin: 25px;
@@ -880,6 +999,24 @@ body {
 .index__card__rotate__special:nth-child(3):hover h2 {
   color: #061a1f;
 }
+@media (max-width: 1200px) {
+  .index__card .index__card__rotate {
+    justify-content: center;
+    margin: 25px;
+  }
+  .index__card .index__card__rotate__special {
+    width: 41%;
+  }
+}
+@media (max-width: 768px) {
+  .index__card .index__card__rotate {
+    flex-direction: column;
+    align-items: center;
+  }
+  .index__card .index__card__rotate__special {
+    width: 60%;
+  }
+}
 
 /* contact cards */
 .index__contact {
@@ -890,19 +1027,19 @@ body {
   height: 45vh;
 }
 .index__contact__links {
-  flex-basis: 20%;
+  flex-basis: 30%;
   text-align: center;
   margin: 25px;
 }
 .index__contact__links img {
-  width: 90%;
+  width: 75%;
   height: auto;
 }
 .index__contact__links img:hover {
   transform: scale(1.25);
 }
 .index__contact__rechts {
-  flex-basis: 25%;
+  flex-basis: 40%;
 }
 .index__contact__rechts h1 {
   margin-bottom: 20px;
@@ -915,6 +1052,33 @@ body {
   cursor: pointer;
   margin-left: 0;
   margin-top: 35px;
+}
+@media (max-width: 1200px) {
+  .index__contact {
+    flex-direction: column;
+  }
+  .index__contact__rechts {
+    order: -1;
+    text-align: center;
+  }
+  .index__contact__links img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .index__contact {
+    margin: 30px;
+  }
+  .index__contact__links img {
+    display: none;
+  }
+  .index__contact button {
+    width: 20%;
+    padding: 8px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 /*________INDEX EINDE________*/
