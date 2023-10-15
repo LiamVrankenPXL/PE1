@@ -1,52 +1,66 @@
 @use 'base' as *;
 
-/*________NAV START________*/
-.navigatie {
-  background-color: transparent;
+/*-------- NAV START --------*/
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding-top: 5px;
 
-  ul {
+  .brand {
     display: flex;
-    align-items: center;
-    padding: 15px 15px 15px 0;
-    margin: 0;
-    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+    .toggle-icon {
+      cursor: pointer;
+    }
   }
 
-  li:nth-child(2) {
-    margin-right: 20px;
-    text-decoration: none;
+  .nav-item {
+    padding: 10px;
+    display: none;
   }
 
-  li:nth-child(3) {
-    margin-right: 30px;
+  .nav-item.show {
+    display: block;
   }
 
+  @media (min-width: 1025px) {
+    flex-direction: row;
 
+    .brand {
+      display: block;
+    }
 
-  li:nth-child(4), li:nth-child(5) {
-    margin: 15px;
-  }
+    .nav-item:nth-child(2) {
+      margin-left: auto;
+    }
 
-  li.logo {
-    margin: 20px auto 0 20px;
-  }
+    .nav-item:nth-child(4) {
+      margin-left: 20px;
+    }
 
-  img {
-    width: 45px;
+    .nav-item {
+      display: block;
+    }
+
+    .toggle-icon {
+      display: none;
+    }
   }
 }
-/*________NAV EINDE________*/
-
-
+/*-------- NAV END --------*/
 
 
 
 .login {
   @include flexLayout;
   flex-direction: column;
-  height: 100vh;
   width: 80vw;
-  margin: 0 auto;
+  margin: 10% auto 20%;
+
 
   .login__layout {
     @include flexLayout;

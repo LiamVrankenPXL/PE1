@@ -37,26 +37,22 @@ body {
 /*_____FONDS/ALGEMEEN EINDE_____*/
 
 
-/*________NAV START________*/
-.navigatie {
-  margin-bottom: 25px;
-  background-color: transparent;
 
-  ul {
-    color: white;
-    list-style: none;
+/*________NAV START________*/
+.main-nav {
+  background-color: transparent;
+  color: $wit;
+  .brand {
+    .toggle-icon {
+      font-size: $font_titel;
+    }
   }
 
-  a {
-    text-decoration: none;
-    color: $licht_blauw;
-
-    &:hover {
-      color: $blauw;
-    }
-
-    i {
-      color: $licht_blauw;
+  @media (min-width: 1025px) {
+    .nav-item {
+      i {
+        font-size: $font_subtitel;
+      }
     }
   }
 }
@@ -366,6 +362,7 @@ body {
 /*________INDEX EINDE________*/
 
 
+/*________FOOTER START________*/
 
 .footer {
   background-color: $blauw;
@@ -400,7 +397,7 @@ body {
     }
 
     .footer__titel {
-      font-size: $font_subtitel2;
+      font-size: $font_subtitel;
     }
 
     .footer__tekst {

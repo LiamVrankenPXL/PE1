@@ -8,23 +8,31 @@
     <!-- Link naar main.css  bestand -->
     <link rel="stylesheet" href="css/main.css">
 
+    <script defer src="nav.js"></script>
+
     <!-- Link voor icons -->
     <script src="https://kit.fontawesome.com/6a30581523.js" crossorigin="anonymous"></script>
     <!-- Link voor Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700" rel="stylesheet">
+
+
 </head>
 <body>
 <!--navigatie-->
-<nav class="navigatie">
-    <ul>
-        <li class="logo"><img src="assets/images/logo.png" alt="logo"></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Product</a></li>
-        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
-    </ul>
+<nav class="main-nav">
+    <div class="brand">
+        <img src="assets/images/logo.png" alt="afbeelding logo">
+        <i class="fas fa-bars toggle-icon"></i>
+    </div>
+    <div class="nav-item">Product</div>
+    <div class="nav-item">Home</div>
+    <div class="nav-item"><i class="fa-solid fa-cart-shopping"></i></div>
+    <div class="nav-item"><i class="fa-solid fa-user"></i></div>
 </nav>
 
+
+
+<!--login-->
 <div class="login">
     <div class="login__layout">
         <div class="login__links">
