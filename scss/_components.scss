@@ -28,35 +28,37 @@ body {
 }
 
 #achtergrond {
-  background-image: url("assets/images/achtergrond.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  z-index: 1;
+  @include achtergrondAfbeelding("../assets/images/achtergrond.png")
+}
+
+#achtergrond2 {
+  @include achtergrondAfbeelding("../assets/images/achtergrond2.png")
+
+}
+
+#achtergrond2 {
+  @include achtergrondAfbeelding("../assets/images/achtergrond3.png")
+
 }
 /*_____FONDS/ALGEMEEN EINDE_____*/
 
 
-/*________NAV START________*/
-.navigatie {
-  margin-bottom: 25px;
-  background-color: transparent;
 
-  ul {
-    color: white;
-    list-style: none;
+/*________NAV START________*/
+.main-nav {
+  background-color: transparent;
+  color: $wit;
+  .brand {
+    .toggle-icon {
+      font-size: $font_titel;
+    }
   }
 
-  a {
-    text-decoration: none;
-    color: $licht_blauw;
-
-    &:hover {
-      color: $blauw;
-    }
-
-    i {
-      color: $licht_blauw;
+  @media (min-width: 1025px) {
+    .nav-item {
+      i {
+        font-size: $font_subtitel;
+      }
     }
   }
 }
@@ -66,9 +68,14 @@ body {
 
 /*________LOGIN START________*/
 .login {
+  h1 {
+    font-size: $font_subtitel2;
+  }
   &__links {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    background-color: $blauw;
+
 
     .login__gegevens {
       &__adres__tekst,
@@ -83,7 +90,7 @@ body {
 
     .login__signin__more {
       i {
-        font-size: $font_titel;
+        font-size: $font_subtitel2;
       }
     }
 
@@ -101,6 +108,7 @@ body {
     border-bottom-right-radius: 20px;
 
     h1 {
+      font-size: $font_subtitel2;
       color: $licht_blauw;
     }
 
@@ -127,9 +135,13 @@ body {
 /*________PRODUCT START________*/
 /*________product header gegevens start________*/
 .product__header {
-  background-color: $blauw;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  h1 {
+    color: $licht_blauw;
+  }
+
+  p {
+    color: $wit;
+  }
 
   /*________search/filter gegevens start________*/
   .product__search {
@@ -360,10 +372,28 @@ body {
 /*________INDEX EINDE________*/
 
 
-
 /*________FOOTER START________*/
+
 .footer {
   background-color: $blauw;
+
+  @media (max-width: 767px) {
+    .footer__titel {
+      font-size: $font_titel_gsm;
+    }
+
+    .footer__tekst {
+      font-size: $font_tekst_gsm;
+    }
+
+    .footer__kleinTekst {
+      font-size: $font_kleinKekst_gsm;
+    }
+
+    button {
+      @include buttonOpmaakGsm();
+    }
+  }
 
   &__section {
     &__contact {
@@ -375,13 +405,14 @@ body {
         }
       }
     }
-  }
-  .footer__titel {
-    font-size: $font_subtitel2;
-  }
 
-  .footer__tekst {
-    font-size: $font_tekst;
+    .footer__titel {
+      font-size: $font_subtitel;
+    }
+
+    .footer__tekst {
+      font-size: $font_tekst;
+    }
   }
 
   &__copy-right {
@@ -390,3 +421,4 @@ body {
   }
 }
 /*________FOOTER EINDE________*/
+
