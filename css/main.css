@@ -592,10 +592,9 @@ body {
 @media (max-width: 767px) {
   .card__layout {
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .card__layout .card {
-    width: 48%; /* Twee kaarten naast elkaar */
+    width: 90%; /* Twee kaarten naast elkaar */
     margin: 0 0 30px 0; /* Voeg een margin-bottom toe */
   }
 }
