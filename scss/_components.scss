@@ -28,11 +28,17 @@ body {
 }
 
 #achtergrond {
-  background-image: url("assets/images/achtergrond.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  z-index: 1;
+  @include achtergrondAfbeelding("../assets/images/achtergrond.png")
+}
+
+#achtergrond2 {
+  @include achtergrondAfbeelding("../assets/images/achtergrond2.png")
+
+}
+
+#achtergrond2 {
+  @include achtergrondAfbeelding("../assets/images/achtergrond3.png")
+
 }
 /*_____FONDS/ALGEMEEN EINDE_____*/
 
@@ -129,9 +135,13 @@ body {
 /*________PRODUCT START________*/
 /*________product header gegevens start________*/
 .product__header {
-  background-color: $blauw;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  h1 {
+    color: $licht_blauw;
+  }
+
+  p {
+    color: $wit;
+  }
 
   /*________search/filter gegevens start________*/
   .product__search {

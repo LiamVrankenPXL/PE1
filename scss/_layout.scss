@@ -54,7 +54,7 @@
 /*-------- NAV END --------*/
 
 
-
+/*-------- LOG IN START--------*/
 .login {
   @include flexLayout;
   flex-direction: column;
@@ -450,9 +450,10 @@
       width: 150%;
       height: 150%;
     }
-
   }
 }
+
+
 
 
 /* Basisstijlen voor de kijker start*/

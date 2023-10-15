@@ -36,6 +36,14 @@ $card_counter: 3;
   justify-content: center;
 }
 
+@mixin achtergrondAfbeelding($pad) {
+  background-image: url($pad);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  z-index: 1;
+}
+
 @mixin kaderInput($margin_bottom) {
   box-sizing: border-box;
   padding: 8px;

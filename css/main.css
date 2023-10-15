@@ -30,7 +30,23 @@ body {
 }
 
 #achtergrond {
-  background-image: url("assets/images/achtergrond.png");
+  background-image: url("../assets/images/achtergrond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  z-index: 1;
+}
+
+#achtergrond2 {
+  background-image: url("../assets/images/achtergrond2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  z-index: 1;
+}
+
+#achtergrond2 {
+  background-image: url("../assets/images/achtergrond3.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -113,10 +129,13 @@ body {
 /*________PRODUCT START________*/
 /*________product header gegevens start________*/
 .product__header {
-  background-color: #5f8688;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
   /*________search/filter gegevens start________*/
+}
+.product__header h1 {
+  color: #aec0b4;
+}
+.product__header p {
+  color: #ffffff;
 }
 .product__header .product__search__bar input {
   border: 1px solid #aec0b4;
@@ -392,6 +411,7 @@ body {
 }
 
 /*-------- NAV END --------*/
+/*-------- LOG IN START--------*/
 .login {
   display: flex;
   align-items: center;
