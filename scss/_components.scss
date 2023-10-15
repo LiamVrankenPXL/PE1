@@ -356,8 +356,11 @@ body {
   &__section {
     &__contact {
       button {
-        @include buttonLayoutGroot;
         @include buttonOpmaak();
+
+        &:hover {
+          background-color: $donkerder_blauw;
+        }
       }
     }
   }

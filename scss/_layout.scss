@@ -511,6 +511,7 @@
 
 
 
+
 /*________footer gegevens________*/
 .footer {
   display: flex;
@@ -521,6 +522,13 @@
     flex: 1;
     padding: 20px;
     text-align: center;
+
+    &__contact{
+      button {
+        @include buttonLayoutGroot;
+      }
+    }
+
 
     &__links {
       img {

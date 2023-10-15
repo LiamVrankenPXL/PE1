@@ -293,11 +293,6 @@ body {
   background-color: #5f8688;
 }
 .footer__section__contact button {
-  width: 60%;
-  padding: 12px;
-  margin: 15px;
-  border: none;
-  cursor: pointer;
   background-color: #0a333e;
   font-size: 16px;
   color: #ffffff;
@@ -305,6 +300,9 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+.footer__section__contact button:hover {
+  background-color: #061a1f;
 }
 .footer .footer__titel {
   font-size: 30px;
@@ -794,6 +792,13 @@ body {
   flex: 1;
   padding: 20px;
   text-align: center;
+}
+.footer__section__contact button {
+  width: 60%;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
 }
 .footer__section__links img {
   max-width: 80%;
