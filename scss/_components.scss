@@ -1,6 +1,6 @@
 @use 'base' as *;
 
-/*_____fonds_____*/
+/*_____FONDS/ALGEMEEN START_____*/
 h1, h2, h3 {
   font-family: $font_Oswald;
   color: $donkerder_blauw;
@@ -9,6 +9,7 @@ h1, h2, h3 {
 
 h1 {
   font-weight: 600;
+  font-size: $font_titel;
 }
 
 label, p, a {
@@ -26,8 +27,17 @@ body {
   background-color: $donker_thema;
 }
 
+#achtergrond {
+  background-image: url("assets/images/achtergrond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  z-index: 1;
+}
+/*_____FONDS/ALGEMEEN EINDE_____*/
 
-/*________nav gegevens________*/
+
+/*________NAV START________*/
 .navigatie {
   margin-bottom: 25px;
   background-color: transparent;
@@ -50,9 +60,11 @@ body {
     }
   }
 }
+/*________NAV EINDE________*/
 
 
-/*_____login_____*/
+
+/*________LOGIN START________*/
 .login {
   &__links {
     border-top-left-radius: 20px;
@@ -107,16 +119,19 @@ body {
     }
   }
 }
+/*________LOGIN EINDE________*/
 
 
 
 
-/*_____product_____*/
+/*________PRODUCT START________*/
+/*________product header gegevens start________*/
 .product__header {
   background-color: $blauw;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 
+  /*________search/filter gegevens start________*/
   .product__search {
     &__bar {
       input {
@@ -190,77 +205,11 @@ body {
         background-color: $blauw;
       }
     }
-
 }
+/*________PRODUCT EINDE________*/
 
 
-
-.index__header {
-  &__links {
-    h1 {
-      color: $licht_blauw;
-      margin-bottom: 25px;
-    }
-
-    p {
-      color: $wit;
-    }
-
-    button {
-      @include buttonOpmaak();
-
-      &:hover {
-        background-color: $donkerder_blauw;
-      }
-    }
-  }
-}
-
-
-.index__card {
-  h1 {
-    color: $licht_blauw;
-  }
-
-  &__rotate {
-    &__special {
-      background-color: $blauw;
-      border-radius: 10px;
-
-      h2 {
-        font-size: $font_titel;
-      }
-    }
-  }
-}
-
-.index__contact {
-  &__links {
-
-  }
-
-  &__rechts {
-    h1 {
-      color: $licht_blauw;
-    }
-
-    p {
-      color: $wit
-    }
-
-    button {
-      @include buttonOpmaak($licht_blauw);
-      color: $zwart;
-
-      &:hover {
-        background-color: $blauw;
-      }
-    }
-  }
-}
-
-
-/*________product detail gegevens________*/
+/*________PRODUCT DETAIL________*/
 .detail {
   &__layout {
     background-color: $licht_blauw;
@@ -320,38 +269,124 @@ body {
     }
   }
 }
+/*________PRODUCT DETAIL EINDE________*/
 
 
-/*________footer gegevens________*/
-.footer {
-  @include flexLayout;
-  background-color: $blauw;
 
-  &__addr {
-    address {
-      button {
-        @include buttonOpmaak($licht_blauw);
 
-        &:hover {
-          background-color: $donker_blauw;
-        }
-      }
-    }
-  }
-
-  &__nav {
-      &-ul {
-        list-style: none;
-        a {
-          text-decoration: none;
-          color: $donker_blauw;
-        }
-      }
+/*________INDEX START________*/
+.index__header {
+  &__links {
+    h1 {
+      color: $licht_blauw;
+      font-size: $font_groot;
     }
 
-  &__legal {
-    border-top: 1px solid $donker_blauw;
-    padding: 10px;
-    color: $grijs;
+    p {
+      color: $wit;
+    }
+
+    button {
+      @include buttonOpmaak();
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
   }
 }
+
+/* Basisstijlen voor de kijker start*/
+.index__kijker {
+  &__rechts {
+    h1 {
+      color: $licht_blauw;
+      font-size: $font-groot;
+    }
+
+    p {
+      color: $wit;
+    }
+
+    button {
+      @include buttonOpmaak();
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+}
+
+/* index cards */
+.index__card {
+  h1 {
+    color: $licht_blauw;
+  }
+
+  &__rotate {
+    &__special {
+      background-color: $blauw;
+      border-radius: 10px;
+
+      h2 {
+        font-size: $font_subtitel2;
+      }
+
+    }
+  }
+}
+
+/* contact cards */
+.index__contact {
+  &__rechts {
+    h1 {
+      color: $licht_blauw;
+    }
+
+    p {
+      color: $wit;
+    }
+
+    button {
+      @include buttonOpmaak();
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+}
+/*________INDEX EINDE________*/
+
+
+
+/*________FOOTER START________*/
+.footer {
+  background-color: $blauw;
+
+  &__section {
+    &__contact {
+      button {
+        @include buttonOpmaak();
+
+        &:hover {
+          background-color: $donkerder_blauw;
+        }
+      }
+    }
+  }
+  .footer__titel {
+    font-size: $font_subtitel2;
+  }
+
+  .footer__tekst {
+    font-size: $font_tekst;
+  }
+
+  &__copy-right {
+    border-top: 1px solid $donkerder_blauw;
+    background-color: $blauw;
+  }
+}
+/*________FOOTER EINDE________*/

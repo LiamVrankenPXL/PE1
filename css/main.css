@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-/*_____fonds_____*/
+/*_____FONDS/ALGEMEEN START_____*/
 h1, h2, h3 {
   font-family: "Oswald", sans-serif;
   color: #061a1f;
@@ -11,6 +11,7 @@ h1, h2, h3 {
 
 h1 {
   font-weight: 600;
+  font-size: 45px;
 }
 
 label, p, a {
@@ -28,7 +29,16 @@ body {
   background-color: #1A1A1A;
 }
 
-/*________nav gegevens________*/
+#achtergrond {
+  background-image: url("assets/images/achtergrond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  z-index: 1;
+}
+
+/*_____FONDS/ALGEMEEN EINDE_____*/
+/*________NAV START________*/
 .navigatie {
   margin-bottom: 25px;
   background-color: transparent;
@@ -48,7 +58,8 @@ body {
   color: #aec0b4;
 }
 
-/*_____login_____*/
+/*________NAV EINDE________*/
+/*________LOGIN START________*/
 .login__links {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -60,7 +71,7 @@ body {
   font-size: 16px;
 }
 .login__links .login__signin__more i {
-  font-size: 30px;
+  font-size: 45px;
 }
 .login__links button {
   background-color: #0a333e;
@@ -99,11 +110,14 @@ body {
   background-color: #5f8688;
 }
 
-/*_____product_____*/
+/*________LOGIN EINDE________*/
+/*________PRODUCT START________*/
+/*________product header gegevens start________*/
 .product__header {
   background-color: #5f8688;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  /*________search/filter gegevens start________*/
 }
 .product__header .product__search__bar input {
   border: 1px solid #aec0b4;
@@ -165,58 +179,8 @@ body {
   background-color: #5f8688;
 }
 
-.index__header__links h1 {
-  color: #aec0b4;
-  margin-bottom: 25px;
-}
-.index__header__links p {
-  color: #ffffff;
-}
-.index__header__links button {
-  background-color: #0a333e;
-  font-size: 16px;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.index__header__links button:hover {
-  background-color: #061a1f;
-}
-
-.index__card h1 {
-  color: #aec0b4;
-}
-.index__card__rotate__special {
-  background-color: #5f8688;
-  border-radius: 10px;
-}
-.index__card__rotate__special h2 {
-  font-size: 30px;
-}
-
-.index__contact__rechts h1 {
-  color: #aec0b4;
-}
-.index__contact__rechts p {
-  color: #ffffff;
-}
-.index__contact__rechts button {
-  background-color: #aec0b4;
-  font-size: 16px;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  color: #000000;
-}
-.index__contact__rechts button:hover {
-  background-color: #5f8688;
-}
-
-/*________product detail gegevens________*/
+/*________PRODUCT EINDE________*/
+/*________PRODUCT DETAIL________*/
 .detail__layout {
   background-color: #aec0b4;
   border-radius: 4px;
@@ -234,7 +198,7 @@ body {
   font-size: 16px;
 }
 .detail__layout__tekst__info h2 {
-  font-size: 30px;
+  font-size: 45px;
 }
 .detail__layout__tekst__options a {
   text-decoration: none;
@@ -260,15 +224,17 @@ body {
   background-color: #061a1f;
 }
 
-/*________footer gegevens________*/
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #5f8688;
+/*________PRODUCT DETAIL EINDE________*/
+/*________INDEX START________*/
+.index__header__links h1 {
+  color: #aec0b4;
+  font-size: 55px;
 }
-.footer__addr address button {
-  background-color: #aec0b4;
+.index__header__links p {
+  color: #ffffff;
+}
+.index__header__links button {
+  background-color: #0a333e;
   font-size: 16px;
   color: #ffffff;
   border: none;
@@ -276,35 +242,112 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.footer__addr address button:hover {
-  background-color: #0a333e;
-}
-.footer__nav-ul {
-  list-style: none;
-}
-.footer__nav-ul a {
-  text-decoration: none;
-  color: #0a333e;
-}
-.footer__legal {
-  border-top: 1px solid #0a333e;
-  padding: 10px;
-  color: #999;
+.index__header__links button:hover {
+  background-color: #061a1f;
 }
 
-/*________nav gegevens________*/
+/* Basisstijlen voor de kijker start*/
+.index__kijker__rechts h1 {
+  color: #aec0b4;
+  font-size: 55px;
+}
+.index__kijker__rechts p {
+  color: #ffffff;
+}
+.index__kijker__rechts button {
+  background-color: #0a333e;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.index__kijker__rechts button:hover {
+  background-color: #061a1f;
+}
+
+/* index cards */
+.index__card h1 {
+  color: #aec0b4;
+}
+.index__card__rotate__special {
+  background-color: #5f8688;
+  border-radius: 10px;
+}
+.index__card__rotate__special h2 {
+  font-size: 30px;
+}
+
+/* contact cards */
+.index__contact__rechts h1 {
+  color: #aec0b4;
+}
+.index__contact__rechts p {
+  color: #ffffff;
+}
+.index__contact__rechts button {
+  background-color: #0a333e;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.index__contact__rechts button:hover {
+  background-color: #061a1f;
+}
+
+/*________INDEX EINDE________*/
+/*________FOOTER START________*/
+.footer {
+  background-color: #5f8688;
+}
+.footer__section__contact button {
+  background-color: #0a333e;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.footer__section__contact button:hover {
+  background-color: #061a1f;
+}
+.footer .footer__titel {
+  font-size: 30px;
+}
+.footer .footer__tekst {
+  font-size: 18px;
+}
+.footer__copy-right {
+  border-top: 1px solid #061a1f;
+  background-color: #5f8688;
+}
+
+/*________FOOTER EINDE________*/
+/*________NAV START________*/
+.navigatie {
+  background-color: transparent;
+}
 .navigatie ul {
   display: flex;
   align-items: center;
-  padding: 0.5em;
+  padding: 15px 15px 15px 0;
   margin: 0;
-  height: 3rem;
+  height: 50px;
 }
-.navigatie li {
-  margin: 0 1rem;
-}
-.navigatie li:nth-child(2), .navigatie li:nth-child(3) {
+.navigatie li:nth-child(2) {
+  margin-right: 20px;
   text-decoration: none;
+}
+.navigatie li:nth-child(3) {
+  margin-right: 30px;
+}
+.navigatie li:nth-child(4), .navigatie li:nth-child(5) {
+  margin: 15px;
 }
 .navigatie li.logo {
   margin: 20px auto 0 20px;
@@ -313,7 +356,8 @@ body {
   width: 45px;
 }
 
-/*________login gegevens________*/
+/*________NAV EINDE________*/
+/*________LOGIN START________*/
 .login {
   display: flex;
   align-items: center;
@@ -321,7 +365,6 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0 auto;
-  background-color: #aec0b4;
 }
 .login .login__layout {
   display: flex;
@@ -403,7 +446,9 @@ body {
   cursor: pointer;
 }
 
-/*________product header gegevens________*/
+/*________LOGIN EINDE________*/
+/*________PRODUCT START________*/
+/*________product header gegevens start________*/
 .product__header {
   height: 100px;
   padding: 30px 15px 15px 15px;
@@ -413,7 +458,7 @@ body {
   margin-bottom: 10px;
 }
 
-/*________search gegevens________*/
+/*________search/filter gegevens start________*/
 .product__search {
   padding: 20px;
   text-align: center;
@@ -437,6 +482,7 @@ body {
 }
 .product__search .product__filter {
   margin-top: 20px;
+  margin-bottom: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,7 +501,7 @@ body {
   color: #aec0b4;
 }
 
-/*________product cards gegevens________*/
+/*________product cards gegevens start________*/
 .card__layout {
   display: flex;
   align-items: center;
@@ -496,6 +542,7 @@ body {
   width: 20%;
   height: auto;
   margin: 25px 0 20px 0;
+  padding: 20px 5px 20px 5px;
 }
 .card__image {
   width: 50%;
@@ -525,7 +572,7 @@ body {
   margin: 0 auto;
 }
 
-/*________pagination gegevens________*/
+/*________pagination gegevens start________*/
 .pagination {
   display: flex;
   justify-content: center;
@@ -544,96 +591,8 @@ body {
   padding: 4px 8px;
 }
 
-/*________start pagina gegevens________*/
-.index__header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  height: 100vh;
-}
-.index__header__links {
-  flex-direction: column;
-  flex-basis: 25%;
-  margin-right: 50px;
-}
-.index__header__links button {
-  width: 40%;
-  padding: 12px;
-  margin-top: 40px;
-  border: none;
-  cursor: pointer;
-}
-.index__header__rechts {
-  flex-direction: column;
-  flex-basis: 30%;
-}
-.index__header__rechts img {
-  width: 100%;
-  height: 100%;
-}
-
-.index__card h1 {
-  text-align: center;
-  margin: 0 10px 50px 10px;
-}
-.index__card h2 {
-  margin: 0 0 20px 0;
-}
-.index__card__rotate {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.index__card__rotate__special:nth-child(1) {
-  width: 350px;
-  height: 350px;
-  border: none;
-  margin: 25px;
-  padding: 25px;
-  transform: rotate(2deg);
-}
-.index__card__rotate__special:nth-child(2) {
-  width: 350px;
-  height: 350px;
-  border: none;
-  margin: 25px;
-  padding: 25px;
-  transform: rotate(5deg);
-}
-.index__card__rotate__special:nth-child(3) {
-  width: 350px;
-  height: 350px;
-  border: none;
-  margin: 25px;
-  padding: 25px;
-  transform: rotate(-10deg);
-}
-
-.index__contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  margin: 20px;
-  padding: 20px;
-}
-.index__contact__links img {
-  width: 40%;
-  height: auto;
-}
-.index__contact__rechts {
-  flex: 1;
-}
-.index__contact__rechts button {
-  width: 40%;
-  padding: 12px;
-  margin-top: 40px;
-  border: none;
-  cursor: pointer;
-}
-
-/*________product detail gegevens________*/
+/*________PRODUCT EINDE________*/
+/*________PRODUCT DETAIL________*/
 .detail {
   display: flex;
   align-items: center;
@@ -707,80 +666,221 @@ body {
   cursor: pointer;
 }
 
-/*________footer gegevens________*/
-.footer {
+/*________PRODUCT DETAIL EINDE________*/
+/*________INDEX START________*/
+.index__header {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: row wrap;
-  padding: 30px 30px 20px 30px;
+  flex-direction: row;
+  height: 100vh;
 }
-.footer > * {
-  flex: 1 100%;
+.index__header__links {
+  flex-direction: column;
+  flex-basis: 25%;
+  margin-right: 50px;
 }
-.footer__addr {
-  margin-right: 10px;
+.index__header__links h1 {
+  margin-bottom: 10px;
+}
+.index__header__links button {
+  width: 40%;
+  padding: 12px;
+  margin-top: 35px;
+  border: none;
+  cursor: pointer;
+}
+.index__header__rechts {
+  flex-direction: column;
+  flex-basis: 30%;
+}
+.index__header__rechts img {
+  margin-top: -100px;
+  width: 150%;
+  height: 150%;
+}
+
+/* Basisstijlen voor de kijker start*/
+.index__kijker {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  height: 65vh;
+}
+.index__kijker__links {
+  flex-basis: 30%;
+  text-align: center;
+}
+.index__kijker__links img {
+  max-width: 75%;
+  height: auto;
+}
+.index__kijker__links img:hover {
+  transform: scale(1.25);
+}
+.index__kijker__rechts {
+  flex-basis: 25%;
+}
+.index__kijker__rechts h1 {
   margin-bottom: 20px;
 }
-.footer__addr h2 {
-  margin-top: 20px;
-}
-.footer__addr button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.index__kijker__rechts button {
   width: 60%;
   padding: 12px;
   margin: 15px;
   border: none;
   cursor: pointer;
-  width: 30%;
   margin-left: 0;
-}
-.footer__nav {
-  display: flex;
-  flex-flow: row wrap;
-}
-.footer__nav > * {
-  flex: 1 50%;
-  margin-right: 20px;
-}
-.footer__nav-item h2 {
-  margin-bottom: 20px;
-}
-.footer__nav-item-title {
-  margin-bottom: 10px;
-}
-.footer__nav-item-ul {
-  padding-left: 0;
-}
-.footer__nav-item-ul--extra {
-  column-count: 2;
-  column-gap: 1.25em;
-}
-.footer__legal {
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: 35px;
 }
 
-@media screen and (min-width: 24.375em) {
-  .legal .legal__links {
-    margin-left: auto;
-  }
+/* index cards */
+.index__card h1 {
+  text-align: center;
+  margin: 0 10px 50px 10px;
 }
-@media screen and (min-width: 40.375em) {
-  .footer__nav > * {
-    flex: 1;
-  }
-  .nav__item--extra {
-    flex-grow: 2;
-  }
-  .footer__addr {
-    flex: 1 0px;
-  }
-  .footer__nav {
-    flex: 2 0px;
-  }
+.index__card h2 {
+  margin: 0 0 20px 0;
 }
+.index__card__rotate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.index__card__rotate__special:nth-child(1) {
+  width: 350px;
+  height: 350px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform: rotate(2deg);
+}
+.index__card__rotate__special:nth-child(1):hover {
+  transform: scale(1.05);
+  background-color: #aec0b4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.index__card__rotate__special:nth-child(1):hover p {
+  color: #061a1f;
+}
+.index__card__rotate__special:nth-child(1):hover h2 {
+  color: #061a1f;
+}
+.index__card__rotate__special:nth-child(2) {
+  width: 350px;
+  height: 350px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform: rotate(5deg);
+}
+.index__card__rotate__special:nth-child(2):hover {
+  transform: scale(1.05);
+  background-color: #aec0b4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.index__card__rotate__special:nth-child(2):hover p {
+  color: #061a1f;
+}
+.index__card__rotate__special:nth-child(2):hover h2 {
+  color: #061a1f;
+}
+.index__card__rotate__special:nth-child(3) {
+  width: 350px;
+  height: 350px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform: rotate(-10deg);
+}
+.index__card__rotate__special:nth-child(3):hover {
+  transform: scale(1.05);
+  background-color: #aec0b4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.index__card__rotate__special:nth-child(3):hover p {
+  color: #061a1f;
+}
+.index__card__rotate__special:nth-child(3):hover h2 {
+  color: #061a1f;
+}
+
+/* contact cards */
+.index__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 100px 30px 100px;
+  height: 45vh;
+}
+.index__contact__links {
+  flex-basis: 20%;
+  text-align: center;
+  margin: 25px;
+}
+.index__contact__links img {
+  width: 90%;
+  height: auto;
+}
+.index__contact__links img:hover {
+  transform: scale(1.25);
+}
+.index__contact__rechts {
+  flex-basis: 25%;
+}
+.index__contact__rechts h1 {
+  margin-bottom: 20px;
+}
+.index__contact__rechts button {
+  width: 60%;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  margin-left: 0;
+  margin-top: 35px;
+}
+
+/*________INDEX EINDE________*/
+/*________FOOTER START________*/
+.footer {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+.footer__section {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+.footer__section__contact button {
+  width: 60%;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+}
+.footer__section__links img {
+  max-width: 80%;
+  height: auto;
+}
+.footer__section__products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer__copy-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/*________FOOTER EINDE________*/
 
 /*# sourceMappingURL=main.css.map */
