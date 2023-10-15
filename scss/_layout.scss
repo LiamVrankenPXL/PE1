@@ -393,8 +393,7 @@
   justify-content: center;
   margin: 100px 100px 30px 100px;
   height: 45vh;
-  background-color: $zwart;
-  border-radius: 100px;
+
 
   &__links {
     flex-basis: 20%;
@@ -514,94 +513,34 @@
 
 /*________footer gegevens________*/
 .footer {
-  @include flexLayout;
-  flex-flow: row wrap;
-  padding: 30px 30px 20px 30px;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
 
-  > * {
-    flex: 1 100%;
-  }
-
-  &__addr {
-    margin-bottom: 20px;
-
-    img {
-      width: 45%;
-      height: auto;
-      overflow: hidden;
-    }
-
-    h2 {
-      margin-top: -30px;
-    }
-
-    button {
-      @include flexLayout;
-      @include buttonLayoutGroot;
-      width: 30%;
-      margin-left: 0;
-    }
-  }
-
-  &__nav {
-    display: flex;
-    flex-flow: row wrap;
-
-
-    > * {
-      flex: 1 50%;
-      margin-right: 20px;
-    }
-
-    &-item {
-      h2 {
-        margin-bottom: 20px;
-      }
-
-      &-title {
-        margin-bottom: 10px;
-      }
-
-      &-ul {
-        padding-left: 0;
-      }
-
-      &-ul--extra {
-        column-count: 2;
-        column-gap: 1.25em;
-      }
-    }
-  }
-
-  &__legal {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 24.375em) {
-  .legal .legal__links {
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 40.375em) {
-  .footer__nav > * {
+  &__section {
     flex: 1;
+    padding: 20px;
+    text-align: center;
+
+    &__links {
+      img {
+        max-width: 80%;
+        height: auto;
+      }
+    }
+
+    &__products {
+      @include flexLayout;
+      flex-direction: column;
+    }
   }
 
-  .nav__item--extra {
-    flex-grow: 2;
-  }
-
-  .footer__addr {
-    flex: 1 0px;
-  }
-
-  .footer__nav {
-    flex: 2 0px;
+  &__copy-right {
+    @include flexLayout;
+    padding: 10px;
   }
 }
+
 
 
 

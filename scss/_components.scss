@@ -351,35 +351,26 @@ body {
 
 /*________footer gegevens________*/
 .footer {
-  @include flexLayout;
   background-color: $blauw;
 
-  &__addr {
-    address {
+  &__section {
+    &__contact {
       button {
-        @include buttonOpmaak($licht_blauw);
-
-        &:hover {
-          background-color: $donker_blauw;
-        }
+        @include buttonLayoutGroot;
+        @include buttonOpmaak();
       }
     }
   }
-
-  &__nav {
-    &-ul {
-      list-style: none;
-
-      a {
-        text-decoration: none;
-        color: $donker_blauw;
-      }
-    }
+  .footer__titel {
+    font-size: $font_subtitel2;
   }
 
-  &__legal {
-    border-top: 1px solid $donker_blauw;
-    padding: 10px;
-    color: $grijs;
+  .footer__tekst {
+    font-size: $font_tekst;
+  }
+
+  &__copy-right {
+    border-top: 1px solid $donkerder_blauw;
+    background-color: $blauw;
   }
 }
