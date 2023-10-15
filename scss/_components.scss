@@ -319,6 +319,14 @@ body {
   }
 }
 
+@media (max-width: 1200px){
+  .index__header {
+    h1 {
+      font-size: $font_titel;
+    }
+  }
+}
+
 /* Basisstijlen voor de kijker start*/
 .index__kijker {
   &__rechts {
