@@ -125,10 +125,7 @@
       flex: 1.5;
       flex-direction: column;
       padding: 35px;
-      background-image: url("../assets/images/abstract_background.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+
 
       h1 {
         padding-bottom: 10px;
@@ -212,15 +209,6 @@
       padding: 8px 16px;
       margin: 0 10px;
       cursor: pointer;
-      transition: background-color 0.3s;
-      background-color: $blauw;
-      border-radius: 4px;
-
-
-      &:hover {
-        background-color: $donker_blauw;
-        color: $licht_blauw;
-      }
     }
   }
 }
@@ -362,7 +350,6 @@
 
       &__tekst {
         width: 30%;
-        font-size: 0.8em;
         margin-top: 0;
       }
 
@@ -435,11 +422,6 @@
         a {
           margin: 0 20px 0 0;
           padding: 0 10px 0 0;
-          border-right: 1px solid black;
-
-          &:last-child {
-            border-right: none;
-          }
         }
       }
 
@@ -503,6 +485,7 @@
     }
   }
 }
+
 @media (max-width: 768px) {
   .index__header {
     text-align: center;
@@ -510,10 +493,6 @@
 
     &__links {
       width: 70%;
-
-      h1 {
-        font-size: $font_titel_gsm;
-      }
     }
 
     &__rechts img {
@@ -564,10 +543,6 @@
   .index__kijker {
     flex-direction: column;
 
-    h1 {
-      font-size: $font_titel_gsm;
-    }
-
     button {
       @include buttonLayoutKleinGsm;
     }
@@ -578,13 +553,12 @@
   }
 }
 
-
+/* index cards */
 .index__card {
   margin-top: 30px;
 
   h1 {
     text-align: center;
-    font-size: $font_titel;
     margin: 25px 10px 15px 10px;
   }
 
@@ -613,6 +587,7 @@
           transform: rotate(-10deg);
         }
 
+        //Extra effect op de rotatie met hover (daarom niet in de components)
         &:hover {
           transform: scale(1.05);
           background-color: $licht_blauw;
@@ -645,10 +620,6 @@
 
   @media (max-width: 768px) {
     .index__card {
-      h1 {
-        font-size: $font_titel_gsm;
-      }
-
       &__rotate {
         flex-direction: column;
         align-items: center;

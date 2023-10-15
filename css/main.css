@@ -102,6 +102,10 @@ body {
 .login .signin__rechts {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  background-image: url("../assets/images/abstract_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .login .signin__rechts h1 {
   font-size: 30px;
@@ -150,6 +154,16 @@ body {
 }
 .product__header .product__search__bar button:hover {
   background-color: #061a1f;
+}
+
+.product__filter .filter-option {
+  transition: background-color 0.3s;
+  background-color: #5f8688;
+  border-radius: 4px;
+}
+.product__filter .filter-option:hover {
+  background-color: #0a333e;
+  color: #aec0b4;
 }
 
 /*________product cards gegevens________*/
@@ -208,6 +222,11 @@ body {
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
+@media screen and (min-width: 1800px) {
+  .detail__layout__tekst {
+    font-size: 18px;
+  }
+}
 .detail__layout__tekst__stars i, .detail__layout__tekst__stars p {
   color: #061a1f;
 }
@@ -221,6 +240,10 @@ body {
 .detail__layout__tekst__options a {
   text-decoration: none;
   color: #000000;
+  border-right: 1px solid black;
+}
+.detail__layout__tekst__options a:last-child {
+  border-right: none;
 }
 .detail__layout__tekst__options a:first-child {
   font-weight: 600;
@@ -277,6 +300,11 @@ body {
     font-size: 45px;
   }
 }
+@media (max-width: 768px) {
+  .index__header__links h1 {
+    font-size: 24px;
+  }
+}
 /* Basisstijlen voor de kijker start*/
 .index__kijker__rechts h1 {
   color: #aec0b4;
@@ -298,9 +326,15 @@ body {
   background-color: #061a1f;
 }
 
+@media (max-width: 768px) {
+  .index__kijker h1 {
+    font-size: 24px;
+  }
+}
 /* index cards */
 .index__card h1 {
   color: #aec0b4;
+  font-size: 45px;
 }
 .index__card__rotate__special {
   background-color: #5f8688;
@@ -330,6 +364,11 @@ body {
   background-color: #061a1f;
 }
 
+@media (max-width: 768px) {
+  .index__card h1 {
+    font-size: 24px;
+  }
+}
 /*________INDEX EINDE________*/
 /*________FOOTER START________*/
 .footer {
@@ -500,10 +539,6 @@ body {
   flex: 1.5;
   flex-direction: column;
   padding: 35px;
-  background-image: url("../assets/images/abstract_background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .login .login__layout .signin__rechts h1 {
   padding-bottom: 10px;
@@ -577,13 +612,6 @@ body {
   padding: 8px 16px;
   margin: 0 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  background-color: #5f8688;
-  border-radius: 4px;
-}
-.product__search .product__filter .filter-option:hover {
-  background-color: #0a333e;
-  color: #aec0b4;
 }
 
 /*________product cards gegevens start________*/
@@ -713,7 +741,6 @@ body {
   }
   .detail__layout__tekst {
     width: 30%;
-    font-size: 0.8em;
     margin-top: 0;
   }
   .detail__layout__foto {
@@ -773,10 +800,6 @@ body {
 .detail__layout__tekst__options a {
   margin: 0 20px 0 0;
   padding: 0 10px 0 0;
-  border-right: 1px solid black;
-}
-.detail__layout__tekst__options a:last-child {
-  border-right: none;
 }
 .detail__layout__tekst__About p {
   margin-top: 20px;
@@ -831,9 +854,6 @@ body {
   .index__header__links {
     width: 70%;
   }
-  .index__header__links h1 {
-    font-size: 24px;
-  }
   .index__header__rechts img {
     margin-top: 25px;
   }
@@ -878,9 +898,6 @@ body {
   .index__kijker {
     flex-direction: column;
   }
-  .index__kijker h1 {
-    font-size: 24px;
-  }
   .index__kijker button {
     width: 20%;
     padding: 8px;
@@ -892,12 +909,12 @@ body {
     width: 50%;
   }
 }
+/* index cards */
 .index__card {
   margin-top: 30px;
 }
 .index__card h1 {
   text-align: center;
-  font-size: 45px;
   margin: 25px 10px 15px 10px;
 }
 .index__card h2 {
@@ -977,9 +994,6 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .index__card .index__card h1 {
-    font-size: 24px;
-  }
   .index__card .index__card__rotate {
     flex-direction: column;
     align-items: center;
