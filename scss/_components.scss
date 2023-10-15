@@ -9,6 +9,7 @@ h1, h2, h3 {
 
 h1 {
   font-weight: 600;
+  font-size: $font_titel;
 }
 
 label, p, a {
@@ -207,7 +208,29 @@ body {
   &__links {
     h1 {
       color: $licht_blauw;
-      margin-bottom: 25px;
+      font-size: $font_groot;
+    }
+
+    p {
+      color: $wit;
+    }
+
+    button {
+      @include buttonOpmaak();
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+}
+
+
+.index__kijker {
+  &__rechts {
+    h1 {
+      color: $licht_blauw;
+      font-size: $font-groot;
     }
 
     p {
@@ -236,32 +259,28 @@ body {
       border-radius: 10px;
 
       h2 {
-        font-size: $font_titel;
+        font-size: $font_subtitel2;
       }
+
     }
   }
 }
 
 .index__contact {
-  &__links {
-
-  }
-
   &__rechts {
     h1 {
       color: $licht_blauw;
     }
 
     p {
-      color: $wit
+      color: $wit;
     }
 
     button {
-      @include buttonOpmaak($licht_blauw);
-      color: $zwart;
+      @include buttonOpmaak();
 
       &:hover {
-        background-color: $blauw;
+        background-color: $donkerder_blauw;
       }
     }
   }
@@ -348,14 +367,15 @@ body {
   }
 
   &__nav {
-      &-ul {
-        list-style: none;
-        a {
-          text-decoration: none;
-          color: $donker_blauw;
-        }
+    &-ul {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $donker_blauw;
       }
     }
+  }
 
   &__legal {
     border-top: 1px solid $donker_blauw;

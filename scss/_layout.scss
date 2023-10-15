@@ -2,20 +2,29 @@
 
 /*________nav gegevens________*/
 .navigatie {
+  background-color: transparent;
+
   ul {
     display: flex;
     align-items: center;
-    padding: .5em;
+    padding: 15px 15px 15px 0;
     margin: 0;
-    height: 3rem;
+    height: 50px;
   }
 
-  li {
-    margin: 0 1rem;
-  }
-
-  li:nth-child(2), li:nth-child(3) {
+  li:nth-child(2) {
+    margin-right: 20px;
     text-decoration: none;
+  }
+
+  li:nth-child(3) {
+    margin-right: 30px;
+  }
+
+
+
+  li:nth-child(4), li:nth-child(5) {
+    margin: 15px;
   }
 
   li.logo {
@@ -35,7 +44,6 @@
   flex-direction: column;
   height: 100vh;
   margin: 0 auto;
-  background-color: $licht_blauw;
 
   .login__layout {
     @include flexLayout;
@@ -151,6 +159,7 @@
 
   .product__filter {
     margin-top: 20px;
+    margin-bottom: 10%;
     @include flexLayout;
     justify-content: center;
 
@@ -281,10 +290,14 @@
     flex-basis: 25%;
     margin-right: 50px;
 
+    h1 {
+      margin-bottom: 10px;
+    }
+
     button {
       width: 40%;
       padding: 12px;
-      margin-top: 40px;
+      margin-top: 35px;
       border: none;
       cursor: pointer;
     }
@@ -303,6 +316,41 @@
 
   }
 }
+
+
+/* Basisstijlen voor de kijker */
+.index__kijker {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  height: 65vh;
+
+  &__links {
+    flex-basis: 30%;
+    text-align: center;
+
+    img {
+      max-width: 75%;
+      height: auto;
+    }
+  }
+
+  &__rechts {
+    flex-basis: 25%;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      @include buttonLayoutGroot;
+      margin-left: 0;
+      margin-top: 35px;
+    }
+  }
+}
+
 
 .index__card {
   h1 {
@@ -340,30 +388,38 @@
 
 
 .index__contact {
-  @include flexLayout;
-  flex-direction: row;
-  margin: 20px;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 100px 30px 100px;
+  height: 45vh;
+  background-color: $zwart;
+  border-radius: 100px;
 
   &__links {
-
+    flex-basis: 20%;
+    text-align: center;
+    margin: 25px;
 
     img {
-      width: 40%;
+      width: 90%;
       height: auto;
     }
   }
 
   &__rechts {
-    flex: 1;
+    flex-basis: 25%;
+
+    h1 {
+      margin-bottom: 20px;
+    }
 
     button {
-      width: 40%;
-      padding: 12px;
-      margin-top: 40px;
-      border: none;
-      cursor: pointer;
+      @include buttonLayoutGroot;
+      margin-left: 0;
+      margin-top: 35px;
     }
+
   }
 }
 
@@ -467,11 +523,16 @@
   }
 
   &__addr {
-    margin-right: 10px;
     margin-bottom: 20px;
 
+    img {
+      width: 45%;
+      height: auto;
+      overflow: hidden;
+    }
+
     h2 {
-      margin-top: 20px;
+      margin-top: -30px;
     }
 
     button {
@@ -485,6 +546,7 @@
   &__nav {
     display: flex;
     flex-flow: row wrap;
+
 
     > * {
       flex: 1 50%;

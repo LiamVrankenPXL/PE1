@@ -11,6 +11,7 @@ h1, h2, h3 {
 
 h1 {
   font-weight: 600;
+  font-size: 45px;
 }
 
 label, p, a {
@@ -68,7 +69,7 @@ body {
   font-size: 16px;
 }
 .login__links .login__signin__more i {
-  font-size: 30px;
+  font-size: 45px;
 }
 .login__links button {
   background-color: #0a333e;
@@ -175,7 +176,7 @@ body {
 
 .index__header__links h1 {
   color: #aec0b4;
-  margin-bottom: 25px;
+  font-size: 55px;
 }
 .index__header__links p {
   color: #ffffff;
@@ -190,6 +191,26 @@ body {
   transition: background-color 0.3s;
 }
 .index__header__links button:hover {
+  background-color: #061a1f;
+}
+
+.index__kijker__rechts h1 {
+  color: #aec0b4;
+  font-size: 55px;
+}
+.index__kijker__rechts p {
+  color: #ffffff;
+}
+.index__kijker__rechts button {
+  background-color: #0a333e;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.index__kijker__rechts button:hover {
   background-color: #061a1f;
 }
 
@@ -211,17 +232,16 @@ body {
   color: #ffffff;
 }
 .index__contact__rechts button {
-  background-color: #aec0b4;
+  background-color: #0a333e;
   font-size: 16px;
   color: #ffffff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  color: #000000;
 }
 .index__contact__rechts button:hover {
-  background-color: #5f8688;
+  background-color: #061a1f;
 }
 
 /*________product detail gegevens________*/
@@ -242,7 +262,7 @@ body {
   font-size: 16px;
 }
 .detail__layout__tekst__info h2 {
-  font-size: 30px;
+  font-size: 45px;
 }
 .detail__layout__tekst__options a {
   text-decoration: none;
@@ -301,18 +321,25 @@ body {
 }
 
 /*________nav gegevens________*/
+.navigatie {
+  background-color: transparent;
+}
 .navigatie ul {
   display: flex;
   align-items: center;
-  padding: 0.5em;
+  padding: 15px 15px 15px 0;
   margin: 0;
-  height: 3rem;
+  height: 50px;
 }
-.navigatie li {
-  margin: 0 1rem;
-}
-.navigatie li:nth-child(2), .navigatie li:nth-child(3) {
+.navigatie li:nth-child(2) {
+  margin-right: 20px;
   text-decoration: none;
+}
+.navigatie li:nth-child(3) {
+  margin-right: 30px;
+}
+.navigatie li:nth-child(4), .navigatie li:nth-child(5) {
+  margin: 15px;
 }
 .navigatie li.logo {
   margin: 20px auto 0 20px;
@@ -329,7 +356,6 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0 auto;
-  background-color: #aec0b4;
 }
 .login .login__layout {
   display: flex;
@@ -445,6 +471,7 @@ body {
 }
 .product__search .product__filter {
   margin-top: 20px;
+  margin-bottom: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -565,10 +592,13 @@ body {
   flex-basis: 25%;
   margin-right: 50px;
 }
+.index__header__links h1 {
+  margin-bottom: 10px;
+}
 .index__header__links button {
   width: 40%;
   padding: 12px;
-  margin-top: 40px;
+  margin-top: 35px;
   border: none;
   cursor: pointer;
 }
@@ -580,6 +610,38 @@ body {
   margin-top: -100px;
   width: 150%;
   height: 150%;
+}
+
+/* Basisstijlen voor de kijker */
+.index__kijker {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  height: 65vh;
+}
+.index__kijker__links {
+  flex-basis: 30%;
+  text-align: center;
+}
+.index__kijker__links img {
+  max-width: 75%;
+  height: auto;
+}
+.index__kijker__rechts {
+  flex-basis: 25%;
+}
+.index__kijker__rechts h1 {
+  margin-bottom: 20px;
+}
+.index__kijker__rechts button {
+  width: 60%;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  margin-left: 0;
+  margin-top: 35px;
 }
 
 .index__card h1 {
@@ -623,23 +685,34 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  margin: 20px;
-  padding: 20px;
+  margin: 100px 100px 30px 100px;
+  height: 45vh;
+  background-color: #000000;
+  border-radius: 100px;
+}
+.index__contact__links {
+  flex-basis: 20%;
+  text-align: center;
+  margin: 25px;
 }
 .index__contact__links img {
-  width: 40%;
+  width: 90%;
   height: auto;
 }
 .index__contact__rechts {
-  flex: 1;
+  flex-basis: 25%;
+}
+.index__contact__rechts h1 {
+  margin-bottom: 20px;
 }
 .index__contact__rechts button {
-  width: 40%;
+  width: 60%;
   padding: 12px;
-  margin-top: 40px;
+  margin: 15px;
   border: none;
   cursor: pointer;
+  margin-left: 0;
+  margin-top: 35px;
 }
 
 /*________product detail gegevens________*/
@@ -728,11 +801,15 @@ body {
   flex: 1 100%;
 }
 .footer__addr {
-  margin-right: 10px;
   margin-bottom: 20px;
 }
+.footer__addr img {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+}
 .footer__addr h2 {
-  margin-top: 20px;
+  margin-top: -30px;
 }
 .footer__addr button {
   display: flex;
