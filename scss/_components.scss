@@ -1,6 +1,6 @@
 @use 'base' as *;
 
-/*_____fonds_____*/
+/*_____FONDS/ALGEMEEN START_____*/
 h1, h2, h3 {
   font-family: $font_Oswald;
   color: $donkerder_blauw;
@@ -34,9 +34,10 @@ body {
   margin: 0;
   z-index: 1;
 }
+/*_____FONDS/ALGEMEEN EINDE_____*/
 
 
-/*________nav gegevens________*/
+/*________NAV START________*/
 .navigatie {
   margin-bottom: 25px;
   background-color: transparent;
@@ -59,9 +60,11 @@ body {
     }
   }
 }
+/*________NAV EINDE________*/
 
 
-/*_____login_____*/
+
+/*________LOGIN START________*/
 .login {
   &__links {
     border-top-left-radius: 20px;
@@ -116,16 +119,19 @@ body {
     }
   }
 }
+/*________LOGIN EINDE________*/
 
 
 
 
-/*_____product_____*/
+/*________PRODUCT START________*/
+/*________product header gegevens start________*/
 .product__header {
   background-color: $blauw;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 
+  /*________search/filter gegevens start________*/
   .product__search {
     &__bar {
       input {
@@ -199,95 +205,11 @@ body {
         background-color: $blauw;
       }
     }
-
 }
+/*________PRODUCT EINDE________*/
 
 
-
-.index__header {
-  &__links {
-    h1 {
-      color: $licht_blauw;
-      font-size: $font_groot;
-    }
-
-    p {
-      color: $wit;
-    }
-
-    button {
-      @include buttonOpmaak();
-
-      &:hover {
-        background-color: $donkerder_blauw;
-      }
-    }
-  }
-}
-
-
-.index__kijker {
-  &__rechts {
-    h1 {
-      color: $licht_blauw;
-      font-size: $font-groot;
-    }
-
-    p {
-      color: $wit;
-    }
-
-    button {
-      @include buttonOpmaak();
-
-      &:hover {
-        background-color: $donkerder_blauw;
-      }
-    }
-  }
-}
-
-
-.index__card {
-  h1 {
-    color: $licht_blauw;
-  }
-
-  &__rotate {
-    &__special {
-      background-color: $blauw;
-      border-radius: 10px;
-
-      h2 {
-        font-size: $font_subtitel2;
-      }
-
-    }
-  }
-}
-
-.index__contact {
-  &__rechts {
-    h1 {
-      color: $licht_blauw;
-    }
-
-    p {
-      color: $wit;
-    }
-
-    button {
-      @include buttonOpmaak();
-
-      &:hover {
-        background-color: $donkerder_blauw;
-      }
-    }
-  }
-}
-
-
-/*________product detail gegevens________*/
+/*________PRODUCT DETAIL________*/
 .detail {
   &__layout {
     background-color: $licht_blauw;
@@ -347,9 +269,99 @@ body {
     }
   }
 }
+/*________PRODUCT DETAIL EINDE________*/
 
 
-/*________footer gegevens________*/
+
+
+/*________INDEX START________*/
+.index__header {
+  &__links {
+    h1 {
+      color: $licht_blauw;
+      font-size: $font_groot;
+    }
+
+    p {
+      color: $wit;
+    }
+
+    button {
+      @include buttonOpmaak();
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+}
+
+/* Basisstijlen voor de kijker start*/
+.index__kijker {
+  &__rechts {
+    h1 {
+      color: $licht_blauw;
+      font-size: $font-groot;
+    }
+
+    p {
+      color: $wit;
+    }
+
+    button {
+      @include buttonOpmaak();
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+}
+
+/* index cards */
+.index__card {
+  h1 {
+    color: $licht_blauw;
+  }
+
+  &__rotate {
+    &__special {
+      background-color: $blauw;
+      border-radius: 10px;
+
+      h2 {
+        font-size: $font_subtitel2;
+      }
+
+    }
+  }
+}
+
+/* contact cards */
+.index__contact {
+  &__rechts {
+    h1 {
+      color: $licht_blauw;
+    }
+
+    p {
+      color: $wit;
+    }
+
+    button {
+      @include buttonOpmaak();
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+}
+/*________INDEX EINDE________*/
+
+
+
+/*________FOOTER START________*/
 .footer {
   background-color: $blauw;
 
@@ -377,3 +389,4 @@ body {
     background-color: $blauw;
   }
 }
+/*________FOOTER EINDE________*/
