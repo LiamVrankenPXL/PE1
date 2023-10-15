@@ -440,6 +440,10 @@
           }
         }
       }
+
+      .quantityDropdown {
+        @include buttonLayoutKlein;
+      }
     }
   }
 }
